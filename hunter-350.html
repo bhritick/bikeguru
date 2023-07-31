@@ -19,7 +19,7 @@
             background-image: url(hunter2.jpg);
             background-position: center;
             background-size: cover;
-            height: 450px;
+            background-attachment: fixed;
         }
 
         #slide-bg1 {
@@ -117,11 +117,28 @@
             background-repeat: no-repeat;
             height: 300px;
         }
+
+        ul.lead li {
+            list-style-type: "👉";
+            padding: 5px 10px;
+        }
+
+        .white-text-shadow {
+            text-shadow: 5px 5px 5px #000;
+        }
+
+        /* .rsponsive-h {
+            font-size: 6vw !important;
+        }
+
+        .rsponsive-p {
+            font-size: 4vw !important;
+        } */
     </style>
 </head>
 
 <body>
-    <header>
+    <header id="bg-1">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <!-- <a class="navbar-brand" href="#">
@@ -150,29 +167,25 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <section id="bg-1">
-        <div class="bg-fade">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-12"></div>
-                    <div class="col-md-4 col-12">
-                        <div class="my-5 pt-5">
-                            <h1 class="lead text-white text-end">
-                                <span class="fs-3">Hunter </span>
-                                <span class="fs-1">350 </span><br />
-                                <span class="fs-1">1.99 </span>
-                                <span class="fs-3">Lakh </span><br />
-                                <span class="fs-4">Avg. Ex-Showroom price</span>
-                            </h1>
-                            <a href="contact.html"
-                                class="btn btn-danger rounded-pill shadow-none float-end px-5 mt-3">Emi Calculator</a>
-                        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-12"></div>
+                <div class="col-md-4 col-12">
+                    <div class="my-5 pt-5">
+                        <h2 class="lead text-white text-end">
+                            <span class="fs-3">Hunter </span>
+                            <span class="fs-1">350 </span><br />
+                            <span class="fs-1">1.99 </span>
+                            <span class="fs-3">Lakh </span><br />
+                            <span class="fs-4">Avg. Ex-Showroom price</span>
+                        </h2>
+                        <a href="contact.html" class="btn btn-danger rounded-pill shadow-none float-end px-5 mt-3">Emi
+                            Calculator</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
     <section class="mt-5">
         <div class="container">
             <div class="row">
@@ -193,7 +206,7 @@
                 <div class="col-md-4 col-12">
                     <div class="card border-0 mb-3">
                         <div class="card-body">
-                            <ul class="list-group list-group-flush lead fs-6">
+                            <ul class="list-group list-group-flush lead text-end fs-6">
                                 <li class="list-group-item border-0">Engine - 350CC</li>
                                 <li class="list-group-item border-0">Gearbox - 5 Speed</li>
                                 <li class="list-group-item border-0">Mileage - Avg 35 / Kmpl</li>
@@ -202,35 +215,30 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- <div class="card">
-                        <div class="card-body">
-                            <table class="table table-borderless">
-                                <tbody>
-                                    <tr>
-                                        <th scope="row"></th>
-                                        <td>Engine</td>
-                                        <td>350 CC</td>
-                                        <td>Gearbox</td>
-                                        <td>5 Speed</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"></th>
-                                        <td>Mileage</td>
-                                        <td>Avg 35 Kmpl</td>
-                                        <td>Sit Height</td>
-                                        <td>800 Mm</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"></th>
-                                        <td>Weight</td>
-                                        <td>178 Kg</td>
-                                        <td>Fuel capacity</td>
-                                        <td>13 Liters</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-warning">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card bg-transparent border-0 my-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h2 class="lead fs-2 mt-3">Features</h2>
+                                    <p class="lead fs-5">The Hunter 350 comes with a host of features that make it an
+                                        attractive choice for bike enthusiasts. Some of the key features are :</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3">
+                                <img src="https://img.freepik.com/free-vector/hand-drawn-motorcycle-isolated-white-background-monochrome-style_1284-38728.jpg"
+                                    class="img-fluid rounded shadow" alt="...">
+                            </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -238,87 +246,188 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="row">
-                    <div class="my-5">
-                        <p class="lead fs-4">Features</p>
-                        <p class="">The Hunter 350 comes with a host of features that make it an attractive choice for
-                            bike enthusiasts. Some of the key features are:
-
-                            - The Hunter 350 is powered by a 349.34 cc, air/oil-cooled, single-cylinder engine that
-                            produces 20.2 bhp of power and 27 Nm of torque. The engine is fuel-injected and
-                            counterbalanced, which means it delivers a smooth and refined ride with minimal vibrations.
-                            - The Hunter 350 has a lightweight and agile chassis that enhances its handling and
-                            maneuverability. The bike has a shorter wheelbase, lighter weight, and tighter geometry than
-                            the other J-platform models, which makes it more responsive and fun to ride. The bike also
-                            has a low seat height of 800 mm, which makes it accessible and comfortable for riders of
-                            different heights.
-                            - The Hunter 350 comes with a telescopic fork at the front and twin shock absorbers at the
-                            rear for suspension. The suspension setup is well-tuned to absorb bumps and potholes on the
-                            road, while also providing stability and control at high speeds. The bike also has disc
-                            brakes on both wheels, with dual-channel ABS as standard, for effective and safe braking.
-                            - The Hunter 350 has a retro-modern design that combines classic elements with contemporary
-                            touches. The bike has a round headlamp, tail lamp, turn signals, and mirrors, along with a
-                            teardrop-shaped fuel tank and a single-piece seat. The bike also has a digital-analog
-                            instrument cluster that displays speed, odometer, trip meter, fuel level, gear position,
-                            battery voltage, and service reminder. The bike also comes with a USB charging port and
-                            Bluetooth connectivity for smartphone pairing.
-                            - The Hunter 350 is available in three variants: Retro Factory, Metro Dapper, and Metro
-                            Rebel. The Retro Factory variant has black and silver paint schemes with spoke wheels and
-                            single-channel ABS. The Metro Dapper variant has grey, ash, and white paint schemes with
-                            alloy wheels and dual-channel ABS. The Metro Rebel variant has red, black, and blue paint
-                            schemes with alloy wheels and dual-channel ABS. The Metro Rebel variant also has the most
-                            striking and snazzy graphics on the tank and side panels.</p>
-
+                <div class="col-md-6 col-12">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The Hunter 350 is powered by a 349.34 cc, air/oil-cooled,
+                                    single-cylinder engine that produces 20.2 bhp of power and 27 Nm of torque. </div>
+                            </div>
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The
+                                    engine is fuel-injected and counterbalanced, which means it delivers a smooth and
+                                    refined ride with minimal vibrations.</div>
+                            </div>
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The Hunter 350 has a lightweight and agile chassis that enhances
+                                    its handling and maneuverability. </div>
+                            </div>
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The bike has a shorter wheelbase, lighter weight,
+                                    and tighter geometry than the other J-platform models, which makes it more
+                                    responsive and fun to ride.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The bike also has a low seat height of 800 mm, which makes it
+                                    accessible and comfortable for riders of different heights.</div>
+                            </div>
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The Hunter 350 comes with a telescopic fork at the front and twin
+                                    shock absorbers at the rear for suspension. </div>
+                            </div>
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The suspension setup is well-tuned to
+                                    absorb bumps and potholes on the road, while also providing stability and control at
+                                    high speeds.</div>
+                            </div>
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The Hunter 350 has a retro-modern design that combines classic
+                                    elements with contemporary touches.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The bike also has disc brakes on both wheels,
+                                    with dual-channel ABS as standard, for effective and safe braking.</div>
+                            </div>
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The bike also has a digital-analog instrument cluster that
+                                    displays speed, odometer, trip meter, fuel level, gear position, battery voltage,
+                                    and service reminder. </div>
+                            </div>
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The bike also comes with a USB charging port and Bluetooth
+                                    connectivity for smartphone pairing.</div>
+                            </div>
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The Hunter 350 is available in three variants: Retro Factory,
+                                    Metro Dapper, and Metro Rebel. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The Retro Factory variant has black and silver paint
+                                    schemes with spoke wheels and single-channel ABS.</div>
+                            </div>
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The Metro Dapper variant has grey, ash, and white paint schemes
+                                    with alloy wheels and dual-channel ABS.</div>
+                            </div>
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The Metro Rebel variant has red, black, and blue paint schemes
+                                    with alloy wheels and dual-channel ABS.</div>
+                            </div>
+                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
+                                <span class="h3 pe-3">🛑</span>
+                                <div class="lead fs-6">The Metro Rebel variant also has the most striking and snazzy
+                                    graphics on the tank and side panels.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="bg-2">
-        <div class=" my-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-12">
-                        <div class="my-5">
-
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card bg-transparent border-0 my-5 py-5">
+                        <div class="card-body text-center text-white white-text-shadow">
+                            <h2 class="fw-bold">
+                                <span class="fw-bold display-4">Hunter 350 </span><br>
+                                <span class="h5">has the following </span><br>
+                                <span>specifications</span>
+                            </h2>
                         </div>
                     </div>
-                    <div class="col-md-8 col-12"></div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section class="my-5">
         <div class="container">
             <div class="row">
-                <div class="my-5">
-                    <p class="lead fs-4">Specifications
-                    </p>
-                    <p class="">The Hunter 350 has the following specifications:
-
-                        - Engine: 349.34 cc air/oil-cooled single-cylinder SOHC
-                        - Power: 20.2 bhp @ 6100 rpm
-                        - Torque: 27 Nm @ 4000 rpm
-                        - Transmission: Five-speed constant mesh
-                        - Fuel system: Electronic fuel injection
-                        - Ignition system: Transistorized coil ignition
-                        - Clutch: Wet multiplate
-                        - Frame: Twin downtube spine frame
-                        - Front suspension: Telescopic fork (130 mm travel)
-                        - Rear suspension: Twin shock absorbers (80 mm travel)
-                        - Front brake: Disc (300 mm) with dual-channel ABS
-                        - Rear brake: Disc (270 mm) with dual-channel ABS
-                        - Front tyre: CEAT Zoom Plus F - 100/90 -17 M/C 55P
-                        - Rear tyre: CEAT Zoom Plus R -140/70 -17 M/C 66P
-                        - Wheelbase: 1400 mm
-                        - Ground clearance: 165 mm
-                        - Seat height: 800 mm
-                        - Kerb weight: 181 kg
-                        - Fuel tank capacity: 15 litres</p>
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <ul class="lead fs-6">
+                                <li>Engine: 349.34 cc air/oil-cooled single-cylinder SOHC</li>
+                                <li>Power: 20.2 bhp @ 6100 rpm</li>
+                                <li>Torque: 27 Nm @ 4000 rpm</li>
+                                <li>Transmission: Five-speed constant mesh</li>
+                                <li>Fuel system: Electronic fuel injection</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-        </div>
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <ul class="lead fs-6">
+                                <li>Ignition system: Transistorized coil ignition</li>
+                                <li>Clutch: Wet multiplate</li>
+                                <li>Frame: Twin downtube spine frame</li>
+                                <li>Front suspension: Telescopic fork (130 mm travel)</li>
+                                <li>Rear suspension: Twin shock absorbers (80 mm travel)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <ul class="lead fs-6">
+                                <li>Front brake: Disc (300 mm) with dual-channel ABS</li>
+                                <li>Rear brake: Disc (270 mm) with dual-channel ABS</li>
+                                <li>Front tyre: CEAT Zoom Plus F - 100/90 - 17 M/C 55P</li>
+                                <li>Rear tyre: CEAT Zoom Plus R -140/70 -17 M/C 66P</li>
+                                <li>Wheelbase: 1400 mm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <ul class="lead fs-6">
+                                <li>Ground clearance: 165 mm</li>
+                                <li>Seat height: 800 mm</li>
+                                <li>Kerb weight: 181 kg</li>
+                                <li>Fuel tank capacity: 15 litres</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
     </section>
     <section>
         <div class="container-fluid my-5">
@@ -367,21 +476,22 @@
                 <div class="">
                     <p class="lead fs-4">Accessories
                     </p>
-                    <p class="">The Hunter 350 can be customized with various accessories that enhance its functionality
+                    <p class="lead fs-6">The Hunter 350 can be customized with various accessories that enhance its
+                        functionality
                         and appearance. Some of the accessories are:
 
-                        - Windshield kit: A clear polycarbonate windshield that provides protection from wind blast and
+                        Windshield kit: A clear polycarbonate windshield that provides protection from wind blast and
                         debris.
-                        - Engine guard kit: A black powder-coated steel guard that protects the engine from impacts and
+                        Engine guard kit: A black powder-coated steel guard that protects the engine from impacts and
                         scratches.
-                        - Saddlebag kit: A pair of water-resistant canvas saddlebags that offer additional storage
+                        Saddlebag kit: A pair of water-resistant canvas saddlebags that offer additional storage
                         space.
-                        - Pannier rack kit: A black powder-coated steel rack that supports the saddlebags.
-                        - Backrest kit: A black powder-coated steel backrest that provides comfort and support for the
+                        Pannier rack kit: A black powder-coated steel rack that supports the saddlebags.
+                        Backrest kit: A black powder-coated steel backrest that provides comfort and support for the
                         pillion rider.
-                        - Seat cover kit: A water-resistant seat cover that protects the seat from dust and moisture.
-                        - Tank pad kit: A rubber pad that prevents scratches on the fuel tank.
-                        - Tripper navigation pod kit: A digital navigation device that connects to your smartphone via
+                        Seat cover kit: A water-resistant seat cover that protects the seat from dust and moisture.
+                        Tank pad kit: A rubber pad that prevents scratches on the fuel tank.
+                        Tripper navigation pod kit: A digital navigation device that connects to your smartphone via
                         Bluetooth and displays turn-by-turn directions on your instrument cluster.</p>
                 </div>
             </div>
