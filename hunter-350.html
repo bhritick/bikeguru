@@ -12,7 +12,7 @@
             background-image: url(hunter1.jpg);
             background-position: center;
             background-size: cover;
-            height: 500px;
+            background-attachment: fixed;
         }
 
         #bg-2 {
@@ -20,6 +20,16 @@
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
+        }
+
+        #bg-3 {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0) 70%, rgba(17, 116, 0, 0.5) 70%);
+        }
+
+        #bg-4 {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0) 70%, rgba(0, 0, 0, 0.25) 70%);
         }
 
         #slide-bg1 {
@@ -127,60 +137,73 @@
             text-shadow: 5px 5px 5px #000;
         }
 
-        /* .rsponsive-h {
-            font-size: 6vw !important;
+        .color-box {
+            width: 38px;
+            height: 38px;
         }
 
-        .rsponsive-p {
-            font-size: 4vw !important;
-        } */
+        .card-head-bg {
+            background-image: url(res/royal-enfield-bg.png);
+            background-size: contain;
+            background-position: top right;
+            background-repeat: no-repeat;
+            height: 150px;
+        }
     </style>
 </head>
 
 <body>
     <header id="bg-1">
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <!-- <a class="navbar-brand" href="#">
+        <div id="bg-3">
+            <div id="bg-4">
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                        <!-- <a class="navbar-brand" href="#">
                     <img src="https://img.freepik.com/free-vector/law-office_497289-40.jpg?w=740" alt="" width="30" height="24">
                 </a> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="enfield.html">Aboutus</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="service.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-12"></div>
-                <div class="col-md-4 col-12">
-                    <div class="my-5 pt-5">
-                        <h2 class="lead text-white text-end">
-                            <span class="fs-3">Hunter </span>
-                            <span class="fs-1">350 </span><br />
-                            <span class="fs-1">1.99 </span>
-                            <span class="fs-3">Lakh </span><br />
-                            <span class="fs-4">Avg. Ex-Showroom price</span>
-                        </h2>
-                        <a href="contact.html" class="btn btn-danger rounded-pill shadow-none float-end px-5 mt-3">Emi
-                            Calculator</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="enfield.html">Aboutus</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="service.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-12"></div>
+                        <div class="col-md-4 col-12">
+                            <div class="my-5 py-5">
+                                <h2 class="lead text-white text-end">
+                                    <span class="fw-bold display-4">Hunter </span>
+                                    <span class="display-3">350 </span><br />
+                                </h2>
+                                <h3 class="lead text-white text-end my-3">
+                                    <span class="display-3 mt-5">1.99 </span>
+                                    <span class="fs-2 mb-5">Lakh </span>
+                                </h3>
+                                <p class="lead text-white text-end fw-bold fs-3 mb-5">Avg. Ex-Showroom price</p>
+                                <p class="text-end">
+                                    <a href="contact.html" class="btn btn-danger rounded-pill shadow-none px-5">Emi
+                                        Calculator</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -243,114 +266,67 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-12">
-                    <div class="card border-0">
+                    <div class="card mb-4">
                         <div class="card-body">
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The Hunter 350 is powered by a 349.34 cc, air/oil-cooled,
-                                    single-cylinder engine that produces 20.2 bhp of power and 27 Nm of torque. </div>
-                            </div>
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The
-                                    engine is fuel-injected and counterbalanced, which means it delivers a smooth and
-                                    refined ride with minimal vibrations.</div>
-                            </div>
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The Hunter 350 has a lightweight and agile chassis that enhances
-                                    its handling and maneuverability. </div>
-                            </div>
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The bike has a shorter wheelbase, lighter weight,
-                                    and tighter geometry than the other J-platform models, which makes it more
-                                    responsive and fun to ride.</div>
-                            </div>
+                            <img class="float-end" src="res/icons8-engine-94.png" alt="">
+                            <p class="lead fs-6">The Hunter 350 is powered by a 349.34 cc, air/oil-cooled,
+                                single-cylinder engine that produces 20.2 bhp of power and 27 Nm of torque. engine
+                                is fuel-injected and counterbalanced, which means it delivers a smooth and refined
+                                ride with minimal vibrations.</p>
+                            <hr class="w-50">
+                            <p class="lead fs-6">The Hunter 350 has a lightweight and agile chassis that enhances
+                                its handling and maneuverability. The bike has a shorter wheelbase, lighter weight,
+                                and tighter geometry than the other J-platform models, which makes it more
+                                responsive and fun to ride.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-12">
-                    <div class="card border-0">
+                    <div class="card mb-4">
                         <div class="card-body">
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The bike also has a low seat height of 800 mm, which makes it
-                                    accessible and comfortable for riders of different heights.</div>
-                            </div>
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The Hunter 350 comes with a telescopic fork at the front and twin
-                                    shock absorbers at the rear for suspension. </div>
-                            </div>
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The suspension setup is well-tuned to
-                                    absorb bumps and potholes on the road, while also providing stability and control at
-                                    high speeds.</div>
-                            </div>
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The Hunter 350 has a retro-modern design that combines classic
-                                    elements with contemporary touches.</div>
-                            </div>
+                            <img class="float-end" src="res/icons8-tyre-94.png" alt="">
+                            <p class="lead fs-6">The bike also has a low seat height of 800 mm, which makes it
+                                accessible and comfortable for riders of different heights. The Hunter 350 comes
+                                with a telescopic fork at the front and twin shock absorbers at the rear for
+                                suspension.</p>
+                            </p>
+                            <hr class="w-50">
+                            <p class="lead fs-6">The suspension setup is well-tuned to absorb bumps and
+                                potholes on the road, while also providing stability and control at high speeds.
+                                The Hunter 350 has a retro-modern design that combines classic elements with
+                                contemporary touches.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-12">
-                    <div class="card border-0">
-                        <div class="card-body">
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The bike also has disc brakes on both wheels,
-                                    with dual-channel ABS as standard, for effective and safe braking.</div>
-                            </div>
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The bike also has a digital-analog instrument cluster that
-                                    displays speed, odometer, trip meter, fuel level, gear position, battery voltage,
-                                    and service reminder. </div>
-                            </div>
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The bike also comes with a USB charging port and Bluetooth
-                                    connectivity for smartphone pairing.</div>
-                            </div>
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The Hunter 350 is available in three variants: Retro Factory,
-                                    Metro Dapper, and Metro Rebel. </div>
-                            </div>
+                    <div class="card mb-4">
+                        <div class="card-body py-5">
+                            <img class="float-end" src="res/icons8-bluetooth-94.png" alt="">
+                            <p class="lead fs-6">The bike also has disc brakes on both wheels, has a
+                                digital-analog instrument cluster that displays speed, odometer, trip meter,
+                                fuel level, gear position, battery voltage, and service reminder.</p>
+                            <hr class="w-50">
+                            <p class="lead fs-6">The bike also comes with a USB charging port and Bluetooth
+                                connectivity for smartphone pairing. The Hunter 350 is available in three
+                                variants: Retro Factory, Metro Dapper, and Metro Rebel.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-12">
-                    <div class="card border-0">
-                        <div class="card-body">
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The Retro Factory variant has black and silver paint
-                                    schemes with spoke wheels and single-channel ABS.</div>
-                            </div>
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The Metro Dapper variant has grey, ash, and white paint schemes
-                                    with alloy wheels and dual-channel ABS.</div>
-                            </div>
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The Metro Rebel variant has red, black, and blue paint schemes
-                                    with alloy wheels and dual-channel ABS.</div>
-                            </div>
-                            <div class="alert d-flex align-items-center mb-0 py-2" role="alert">
-                                <span class="h3 pe-3">🛑</span>
-                                <div class="lead fs-6">The Metro Rebel variant also has the most striking and snazzy
-                                    graphics on the tank and side panels.</div>
-                            </div>
+                    <div class="card mb-4">
+                        <div class="card-body py-5">
+                            <img class="float-end" src="res/icons8-engine-94.png" alt="">
+                            <p class="lead fs-6">The Retro Factory variant has black and silver paint
+                                schemes with spoke wheels and single-channel ABS. The Metro Dapper variant has grey,
+                                ash, and white paint schemes with alloy wheels and dual-channel ABS.</p>
+                            <hr class="w-50">
+                            <p class="lead fs-6">The Metro Rebel variant has red, black, and blue paint
+                                schemes with alloy wheels and dual-channel ABS. The Metro Rebel variant also has the
+                                most striking and snazzy graphics on the tank and side panels.</p>
                         </div>
                     </div>
                 </div>
@@ -377,8 +353,8 @@
     <section class="my-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-12">
-                    <div class="card mb-4">
+                <div class="col-md-4 col-12">
+                    <div class="card my-4">
                         <div class="card-body">
                             <ul class="lead fs-6">
                                 <li>Engine: 349.34 cc air/oil-cooled single-cylinder SOHC</li>
@@ -386,40 +362,32 @@
                                 <li>Torque: 27 Nm @ 4000 rpm</li>
                                 <li>Transmission: Five-speed constant mesh</li>
                                 <li>Fuel system: Electronic fuel injection</li>
+                                <li>Ignition system: Transistorized coil ignition</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-12">
-                    <div class="card mb-4">
+                <div class="col-md-4 col-12">
+                    <div class="card bg-light mb-4">
                         <div class="card-body">
                             <ul class="lead fs-6">
-                                <li>Ignition system: Transistorized coil ignition</li>
-                                <li>Clutch: Wet multiplate</li>
                                 <li>Frame: Twin downtube spine frame</li>
                                 <li>Front suspension: Telescopic fork (130 mm travel)</li>
                                 <li>Rear suspension: Twin shock absorbers (80 mm travel)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <ul class="lead fs-6">
                                 <li>Front brake: Disc (300 mm) with dual-channel ABS</li>
                                 <li>Rear brake: Disc (270 mm) with dual-channel ABS</li>
                                 <li>Front tyre: CEAT Zoom Plus F - 100/90 - 17 M/C 55P</li>
-                                <li>Rear tyre: CEAT Zoom Plus R -140/70 -17 M/C 66P</li>
-                                <li>Wheelbase: 1400 mm</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-12">
-                    <div class="card mb-4">
+                <div class="col-md-4 col-12">
+                    <div class="card my-4">
                         <div class="card-body">
                             <ul class="lead fs-6">
+                                <li>Clutch: Wet multiplate</li>
+                                <li>Rear tyre: CEAT Zoom Plus R -140/70 -17 M/C 66P</li>
+                                <li>Wheelbase: 1400 mm</li>
                                 <li>Ground clearance: 165 mm</li>
                                 <li>Seat height: 800 mm</li>
                                 <li>Kerb weight: 181 kg</li>
@@ -434,13 +402,32 @@
     <section>
         <div class="container-fluid my-5">
             <div class="col-12">
-                <p class="text-center lead fs-1 my-5">Available Colors</p>
+                <p class="text-center lead fs-1 mt-5">Available Colors</p>
+                <nav class="nav justify-content-center mb-5">
+                    <a class="nav-link" href="#">
+                        <div class="color-box rounded-circle shadow-sm" style="background-color: #F44336;"></div>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="color-box rounded-circle shadow-sm" style="background-color: #0277BD;"></div>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="color-box rounded-circle shadow-sm" style="background-color: #FAFAFA;"></div>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="color-box rounded-circle shadow-sm" style="background-color: #212121;"></div>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="color-box rounded-circle shadow-sm" style="background-color: #FFEA00;"></div>
+                    </a>
+                </nav>
             </div>
             <div class="row">
                 <div class="col-md-3 col-12 px-0">
                     <div class="card border-0 px-0">
                         <div class="card-body px-0">
-                            <img class="img-fluid" src="Rs200.png" alt="" width="500" height="500">
+                            <img class="img-fluid"
+                                src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="" width="500" height="500">
                             <p class="lead text-center fw-bold fs-4 mt-3">Hunter 350</p>
                         </div>
                     </div>
@@ -448,7 +435,9 @@
                 <div class="col-md-3 col-12 px-0">
                     <div class="card border-0 px-0">
                         <div class="card-body px-0">
-                            <img class="img-fluid" src="hunter1.jpg" alt="" width="500" height="500">
+                            <img class="img-fluid"
+                                src="https://images.pexels.com/photos/4297503/pexels-photo-4297503.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="" width="500" height="500">
                             <p class="lead text-center fw-bold fs-4 mt-3">Hunter 350</p>
                         </div>
                     </div>
@@ -456,7 +445,9 @@
                 <div class="col-md-3 col-12 px-0">
                     <div class="card  border-0 px-0">
                         <div class="card-body px-0">
-                            <img class="img-fluid" src="hunter4.jpg" alt="" width="500" height="500">
+                            <img class="img-fluid"
+                                src="https://images.pexels.com/photos/4297509/pexels-photo-4297509.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="" width="500" height="500">
                             <p class="lead text-center fw-bold fs-4 my-3">Hunter 350</p>
                         </div>
                     </div>
@@ -464,7 +455,9 @@
                 <div class="col-md-3 col-12 px-0">
                     <div class="card  border-0 px-0">
                         <div class="card-body px-0">
-                            <img class="img-fluid" src="hunter1.jpg" alt="" width="500" height="500">
+                            <img class="img-fluid"
+                                src="https://images.pexels.com/photos/5661487/pexels-photo-5661487.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="" width="500" height="500">
                             <p class="lead text-center fw-bold fs-4 my-3">Hunter 350</p>
                         </div>
                     </div>
@@ -476,14 +469,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="lead fs-2">Accessories</h2>
-                    <p class="lead fs-6">The Hunter 350 can be customized with various accessories that enhance its
-                        functionality and appearance. Some of the accessories are:</p>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img class="float-end" width="100" src="res/Motocross-rafiki.png" alt="">
+                            <h2 class="lead fs-2">Accessories</h2>
+                            <p class="lead fs-6">The Hunter 350 can be customized with various accessories
+                                <br />that enhance its functionality and appearance. Some of the accessories are:
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-12">
-                    <div class="card">
+                    <div class="card mb-4">
                         <div class="card-body">
                             <p class="lead fs-6"><span class="fw-bold">Windshield kit : </span>A clear polycarbonate
                                 windshield that provides protection from wind blast and debris.</p>
@@ -497,7 +496,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-12">
-                    <div class="card">
+                    <div class="card mb-4">
                         <div class="card-body">
                             <p class="lead fs-6"><span class="fw-bold">Backrest kit : </span>A black powder-coated steel
                                 backrest that provides comfort and support for the pillion rider.</p>
@@ -515,39 +514,52 @@
         </div>
     </section>
     <section>
-        <div class="container-fluid my-5">
+        <div class="container my-5">
             <div class="col-12">
-                <p class="text-center lead fs-1 my-5">Similar bike you can check</p>
+                <h3 class="lead fs-2 my-5">Similar bike you can check</h3>
             </div>
             <div class="row">
                 <div class="col-md-4 col-12">
-                    <div class="card border-0">
+                    <div class="card">
+                        <img class="card-img-top" src="hunter1.jpg">
                         <div class="card-body">
-                            <img class="img-fluid" src="hunter1.jpg" alt="" width="500" height="500">
-                            <p class="lead text-center fw-bold fs-4 my-3">Hunter 350</p>
-                            <p class="text-center fw-bold">350cc <br>Max BHp -20.2 <br> Max torque- 27 Nm <br>EX
-                                shpwroom- 1.99L</p>
+                            <p class="lead text-center fs-4"><strong>Hunter</strong> <span class="fs-2">350</span></p>
+                            <div class="row my-3">
+                                <div class="col">Max BHp <strong>20.2</strong></div>
+                                <div class="col">Max torque <strong>27</strong> Nm</div>
+                            </div>
+                            <p class="text-center fs-5 mb-0">Cubic Capacity <strong>350cc</strong></p>
+                            <p class="text-center fs-5"><strong>1.99L</strong> Ex-showroom</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12">
-                    <div class="card border-0">
+                    <div class="card">
+                        <img class="card-img-top" src="trymp1.jpeg">
                         <div class="card-body">
-                            <img class="img-fluid" src="trymp1.jpeg" alt="" width="500" height="500">
-                            <p class="lead text-center fw-bold fs-4 mt-3">Triumph speed 400</p>
-                            <p class="text-center fw-bold">350cc <br>Max BHp -20.2 <br> Max torque- 27 Nm <br>EX
-                                shpwroom- 1.99L</p>
+                            <p class="lead text-center fs-4"><strong>Triumph</strong> speed <span
+                                    class="fs-2">400</span></p>
+                            <div class="row my-3">
+                                <div class="col">Max BHp <strong>20.2</strong></div>
+                                <div class="col">Max torque <strong>27</strong> Nm</div>
+                            </div>
+                            <p class="text-center fs-5 mb-0">Cubic Capacity <strong>350cc</strong></p>
+                            <p class="text-center fs-5"><strong>1.99L</strong> Ex-showroom</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12">
-                    <div class="card  border-0">
+                    <div class="card">
+                        <img class="card-img-top" src="harley2.jpeg">
                         <div class="card-body">
-                            <img class="img-fluid" src="harley2.jpeg" alt="" width="500" height="500">
-                            <p class="lead text-center fw-bold fs-4 my-3">Harley Davidson x440</p>
-                            <p class="text-center fw-bold">350cc <br>Max BHp -20.2 <br> Max torque- 27 Nm <br>EX
-                                shpwroom- 1.99L</p>
-
+                            <p class="lead text-center fs-4"><strong>Harley</strong> Davidson <span
+                                    class="fs-2">x440</span></p>
+                            <div class="row my-3">
+                                <div class="col">Max BHp <strong>20.2</strong></div>
+                                <div class="col">Max torque <strong>27</strong> Nm</div>
+                            </div>
+                            <p class="text-center fs-5 mb-0">Cubic Capacity <strong>350cc</strong></p>
+                            <p class="text-center fs-5"><strong>1.99L</strong> Ex-showroom</p>
                         </div>
                     </div>
                 </div>
