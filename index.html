@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,38 +8,76 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <style>
+        .card:hover div hr {
+            width: 100% !important;
+        }
+
         #bg-1 {
             background-image: url(hunter1.jpg);
             background-position: bottom;
             background-size: cover;
-            /* background-attachment: fixed; */
-            height: 500px;
+            background-attachment: fixed;
         }
 
         #bg-2 {
             background-image: url(https://images.pexels.com/photos/704214/pexels-photo-704214.jpeg?auto=compress&cs=tinysrgb&w=1600);
             background-position: center;
             background-size: cover;
-            background-attachment:fixed ;
-            height: 450px;
+            background-attachment: fixed;
+        }
+
+        .card-body hr {
+            transition: 0.3s;
+            width: 0%;
+            /* border-color: #fff !important; */
+        }
+
+        .card-hover div img {
+            transition: 0.3s;
+            filter: grayscale(100);
+        }
+
+        .card-hover:hover .card-body hr {
+            width: 100%;
+            border-color: #000 !important;
+        }
+
+        .card-hover:hover div img {
+            filter: grayscale(0);
+        }
+
+        .anime-card-bg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='320' height='360' preserveAspectRatio='none' viewBox='0 0 320 360'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1040%26quot%3b)' fill='none'%3e%3cpath d='M212.459%2c164.549C247.754%2c167.371%2c281.99%2c147.392%2c299.073%2c116.377C315.632%2c86.315%2c308.902%2c50.319%2c291.752%2c20.59C274.589%2c-9.162%2c246.806%2c-33.914%2c212.459%2c-33.769C178.314%2c-33.625%2c148.963%2c-9.589%2c134.313%2c21.253C121.451%2c48.331%2c132.564%2c77.891%2c146.917%2c104.21C162.155%2c132.153%2c180.732%2c162.012%2c212.459%2c164.549' fill='rgba(248%2c 240%2c 24%2c 0.79)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M203.663%2c274.147C214.445%2c274.043%2c224.768%2c268.694%2c229.882%2c259.201C234.77%2c250.128%2c232.573%2c239.268%2c227.187%2c230.481C222.071%2c222.134%2c213.448%2c216.749%2c203.663%2c216.427C193.257%2c216.084%2c182.821%2c220.015%2c177.294%2c228.839C171.437%2c238.191%2c170.997%2c250.18%2c176.548%2c259.717C182.067%2c269.201%2c192.691%2c274.253%2c203.663%2c274.147' fill='rgba(248%2c 240%2c 24%2c 0.79)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M309.27%2c421.812C329.536%2c420.482%2c347.614%2c411.085%2c359%2c394.267C372.233%2c374.722%2c382.249%2c350.619%2c371.801%2c329.454C360.396%2c306.351%2c335.031%2c293.995%2c309.27%2c293.526C282.627%2c293.041%2c256.006%2c304.035%2c242.671%2c327.105C229.327%2c350.192%2c231.446%2c379.819%2c246.785%2c401.632C260.279%2c420.821%2c285.861%2c423.348%2c309.27%2c421.812' fill='rgba(248%2c 240%2c 24%2c 0.79)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-14.35 196.3 a58.79 58.79 0 1 0 117.58 0 a58.79 58.79 0 1 0 -117.58 0z' fill='rgba(248%2c 240%2c 24%2c 0.79)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M34.149%2c368.588C47.197%2c368.653%2c58.307%2c360.105%2c64.861%2c348.823C71.45%2c337.482%2c74.162%2c323.107%2c66.926%2c312.168C60.184%2c301.977%2c46.367%2c302.257%2c34.149%2c302.397C22.285%2c302.533%2c9.143%2c302.974%2c2.645%2c312.902C-4.329%2c323.557%2c-2.31%2c337.438%2c3.96%2c348.521C10.337%2c359.793%2c21.198%2c368.524%2c34.149%2c368.588' fill='rgba(248%2c 240%2c 24%2c 0.79)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1040'%3e%3crect width='320' height='360' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+        }
+
+        .line-bg {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1127%26quot%3b)' fill='none'%3e%3cpath d='M -1023.5674562595411%2c493 C -879.57%2c408.6 -591.57%2c74.4 -303.5674562595412%2c71 C -15.57%2c67.6 128.43%2c466.4 416.4325437404588%2c476 C 704.43%2c485.6 931.72%2c133.2 1136.4325437404589%2c119 C 1341.15%2c104.8 1379.29%2c347.8 1440%2c405' stroke='rgba(255%2c 253%2c 14%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -943.8325763785838%2c82 C -799.83%2c157 -511.83%2c425.2 -223.83257637858375%2c457 C 64.17%2c488.8 208.17%2c267.2 496.1674236214162%2c241 C 784.17%2c214.8 1027.4%2c321.6 1216.1674236214162%2c326 C 1404.93%2c330.4 1395.23%2c275.6 1440%2c263' stroke='rgba(255%2c 253%2c 14%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -540.2677688842664%2c298 C -396.27%2c277.8 -108.27%2c176.4 179.73223111573358%2c197 C 467.73%2c217.6 611.73%2c427.2 899.7322311157336%2c401 C 1187.73%2c374.8 1511.68%2c77.4 1619.7322311157336%2c66 C 1727.79%2c54.6 1475.95%2c288.4 1440%2c344' stroke='rgba(255%2c 253%2c 14%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -201.13514570389145%2c70 C -57.14%2c133.8 230.86%2c365 518.8648542961085%2c389 C 806.86%2c413 950.86%2c198.4 1238.8648542961087%2c190 C 1526.86%2c181.6 1918.64%2c345.4 1958.8648542961087%2c347 C 1999.09%2c348.6 1543.77%2c227.8 1440%2c198' stroke='rgba(255%2c 253%2c 14%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -419.53467968993084%2c82 C -275.53%2c136.4 12.47%2c329.2 300.46532031006916%2c354 C 588.47%2c378.8 732.47%2c185 1020.4653203100692%2c206 C 1308.47%2c227 1656.56%2c455.6 1740.4653203100693%2c459 C 1824.37%2c462.4 1500.09%2c270.2 1440%2c223' stroke='rgba(255%2c 253%2c 14%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -276.24677894302863%2c156 C -132.25%2c206.2 155.75%2c405.6 443.75322105697137%2c407 C 731.75%2c408.4 875.75%2c179 1163.7532210569714%2c163 C 1451.75%2c147 1828.5%2c328.8 1883.7532210569714%2c327 C 1939%2c325.2 1528.75%2c188.6 1440%2c154' stroke='rgba(255%2c 253%2c 14%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1127'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+            background-size: cover;
+            background-attachment: fixed;
+            animation: linebganim 15s infinite;
+        }
+
+        @keyframes linebganim {
+            50% {
+                background-position: center;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <!-- <a class="navbar-brand" href="#">
-                    <img src="https://img.freepik.com/free-vector/law-office_497289-40.jpg?w=740" alt="" width="30" height="24">
-                </a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav lead mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
@@ -51,307 +90,386 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact-us.html">Contact</a>
                         </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
     <section id="bg-1">
-        <div class="">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-12"></div>
-                    <div class="col-md-6 col-12">
-                        <div class="my-5 py-5">
-                            <!-- <h1 class="text-light fw-bold text-center display-6">BikeGuru Dream until your Dream Come True</h1> -->
-                        </div>
-                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="my-5">
-        <div class="container mt-5 pt-5">
-            <div class="col-12">
-                <h2 class="text-start lead fs-1 fw-bold my-3">Brands In India</h2>
-            </div>
-            <div class="row my-5">
-                <div class="col-md-2 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="TVS-Motor-Logo.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Bajaj-Logo.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Hero-logo.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="KTM-Logo.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <a href="enfield.html">
-                                <img class="img-fluid" src="Royal-Enfield-Logo.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Yamaha-Logo.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Jawa-logo.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Ather_Energy_Pvt_Ltd_Logo.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Suzuki-Logo-1958.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Ola_Cabs_logo.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="BMW-Logo.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Yezdi_Logo.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="my-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-12"></div>
-                <div class="col-md-8 col-12">
-                    <h2 class="text-center lead fs-1 fw-bold my-3">Welcome to BikeGuru</h2>
-                    <p class="lead text-center fs-6 my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut
-                        labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        quisque adipiscing lobortis aptent cras et justo.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        quisque adipiscing lobortis aptent cras et
-                        justo.
-                    </p>
-                </div>
-                 <div class="col-md-2 col-12"></div>
-
-            </div>
-        </div>
-    </section>
-     <section class="">
-        <div class="container">
-            <div class="col-12 mt-5">
-                <p class="text-center lead fs-1 fw-bold my-5">Super Bikes</p>
-            </div>
-            <div class="row">
+                <div class="col-md-8 col-12"></div>
                 <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Top 10 Ten Sportsbikes Price Spec_10.webp" alt="">
-                             <p class="lead text-center fw-bold fs-4 my-3">Sportsbikes</p>
+                    <div class="card anime-card-bg shadow-lg border-0 my-5">
+                        <div class="card-body py-5">
+                            <h1 class="text-center fw-bold display-6">
+                                <h1 class="text-center">
+                                    <span class="text-danger fw-bold display-6">BikeGuru </span><br>
+                                    <span>Dream until </span><br>
+                                    <span class="text-danger">your Dream </span><br>
+                                    <span>Come True</span>
+                                </h1>
+                            </h1>
+                            <div class="text-center mt-5">
+                                <a href="contact" class="btn btn-danger rounded-pill shadow-none px-5 py-3">Get
+                                    in touch with us</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="indian-roadmaster.jpg" alt="">
-                             <p class="lead text-center fw-bold fs-4 my-3">Cruser Bike</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="2023-bmw-r-1250-gs-buyers-guide-2.webp" alt="">
-                             <p class="lead text-center fw-bold fs-4 my-3">Touring Bike</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="ducati-scrambler-cafe-racer-standard20200729210342.webp" alt="">
-                             <p class="lead text-center fw-bold fs-4 my-3">Scramler Bike</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="pan-america-1250-right-side-view.webp" alt="">
-                             <p class="lead text-center fw-bold fs-4 my-3">Adventure Bike</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Kawasaki-H2-SX-SE.jpg.webp" alt="">
-                             <p class="lead text-center fw-bold fs-4 my-3">Sports Touring Bike</p>
-                        </div>
-                    </div>
-                </div>
-           </div>
-       </div>
-    </section>
-    <section id="bg-2">
-        <div class="my-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-12"></div>
-                    <div class="col-md-3 col-12">
-                        <div class="my-5 py-5">
-                            <h1 class="text-dark fw-bold  display-6">BikeGuru Dream until your Dream Come True</h1>
-                        </div>
-                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="">
-        <div class="container">
-            <div class="col-12 mt-5">
-                <p class="text-center lead fs-1 fw-bold my-5">Normal Bikes</p>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Rs200.png" alt=""  width="500" height="500">
-                             <p class="lead text-center fw-bold fs-4 my-3">Sports Bikes</p>
-                        </div>
-                    </div>
-                </div>
-               <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Meteor-350-pics-3-405x280.png" alt="" width="500" height="500">
-                             <p class="lead text-center fw-bold fs-4 my-3">Cruser Bike</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Dominar-400-Blue-3-oclock.png" alt="" width="500" height="500">
-                             <p class="lead text-center fw-bold fs-4 my-3">Touring Bike</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="yezdi-scrambler-334-outlaw-olive.jpg" alt="" width="500" height="500">
-                             <p class="lead text-center fw-bold fs-4 my-3">Scramler-Bike</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="TVS-Ntorq-125.jpg" alt="" width="500" height="500">
-                             <p class="lead text-center fw-bold fs-4 my-3">Scooter</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0">
-                        <div class="card-body">
-                            <img class="img-fluid" src="ather-340.jpg" alt="" width="500" height="500">
-                             <p class="lead text-center fw-bold fs-4 my-3">Electric Scooter</p>
-                        </div>
-                    </div>
-                </div>
-           </div>
-       </div>
     </section>
     <section>
-        <div class="container my-5 py-5">
-            <div class="col-12 mt-5">
-                <p class="text-center lead fs-1 fw-bold my-5 pb-5">Upcomming Bikes</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-start text-center lead fs-1 fw-bold my-5">Brands In India</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-12">
+                    <a class="streched-link" href="#">
+                        <div class="card card-hover rounded-0 border-0">
+                            <div class="card-body">
+                                <img class="img-fluid" src="brand-logo/TVS-Logo.jpg" alt="">
+                                <hr class="border mt-3 mb-0">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-12">
+                    <a class="streched-link" href="#">
+                        <div class="card card-hover rounded-0 border-0">
+                            <div class="card-body">
+                                <img class="img-fluid" src="brand-logo/Bajaj-Logo.jpg" alt="">
+                                <hr class="border mt-3 mb-0">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-12">
+                    <a class="streched-link" href="#">
+                        <div class="card card-hover rounded-0 border-0">
+                            <div class="card-body">
+                                <img class="img-fluid" src="brand-logo/Hero-logo.jpg" alt="">
+                                <hr class="border mt-3 mb-0">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-12">
+                    <a class="streched-link" href="#">
+                        <div class="card card-hover rounded-0 border-0">
+                            <div class="card-body">
+                                <img class="img-fluid" src="brand-logo/KTM-Logo.jpg" alt="">
+                                <hr class="border mt-3 mb-0">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-12">
+                    <a class="streched-link" href="enfield">
+                        <div class="card card-hover rounded-0 border-0">
+                            <div class="card-body">
+                                <img class="img-fluid" src="brand-logo/Royal-Enfield-Logo.jpg" alt="">
+                                <hr class="border mt-3 mb-0">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-12">
+                    <a class="streched-link" href="#">
+                        <div class="card card-hover rounded-0 border-0">
+                            <div class="card-body">
+                                <img class="img-fluid" src="brand-logo/Yamaha-Logo.jpg" alt="">
+                                <hr class="border mt-3 mb-0">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-12">
+                    <a class="streched-link" href="#">
+                        <div class="card card-hover rounded-0 border-0">
+                            <div class="card-body">
+                                <img class="img-fluid" src="brand-logo/Jawa-logo.jpg" alt="">
+                                <hr class="border mt-3 mb-0">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-12">
+                    <a class="streched-link" href="#">
+                        <div class="card card-hover rounded-0 border-0">
+                            <div class="card-body">
+                                <img class="img-fluid" src="brand-logo/Ather-Logo.jpg" alt="">
+                                <hr class="border mt-3 mb-0">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-12">
+                    <a class="streched-link" href="#">
+                        <div class="card card-hover rounded-0 border-0">
+                            <div class="card-body">
+                                <img class="img-fluid" src="brand-logo/Suzuki-Logo.jpg" alt="">
+                                <hr class="border mt-3 mb-0">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-12">
+                    <a class="streched-link" href="#">
+                        <div class="card card-hover rounded-0 border-0">
+                            <div class="card-body">
+                                <img class="img-fluid" src="brand-logo/Ola-logo.jpg" alt="">
+                                <hr class="border mt-3 mb-0">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-12">
+                    <a class="streched-link" href="#">
+                        <div class="card card-hover rounded-0 border-0">
+                            <div class="card-body">
+                                <img class="img-fluid" src="brand-logo/BMW-Logo.jpg" alt="">
+                                <hr class="border mt-3 mb-0">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-12">
+                    <a class="streched-link" href="#">
+                        <div class="card card-hover rounded-0 border-0">
+                            <div class="card-body">
+                                <img class="img-fluid" src="brand-logo/Yezdi-Logo.jpg" alt="">
+                                <hr class="border mt-3 mb-0">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <div class="card anime-card-bg shadow-lg border-0 my-5">
+                        <div class="card-body py-5">
+                            <h1 class="text-center">
+                                <span class="text-danger fw-bold display-6">BikeGuru </span><br>
+                                <span>Dream until </span><br>
+                                <span class="text-danger">your Dream </span><br>
+                                <span>Come True</span>
+                            </h1>
+                            <div class="text-center mt-5">
+                                <a href="contact" class="btn btn-danger rounded-pill shadow-none px-5 py-3">Get
+                                    in touch with us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12"></div>
+                <div class="col-md-4 col-12 py-5">
+                    <h2 class="lead fw-bold fs-2 my-4">Welcome to BikeGuru</h2>
+                    <p class="lead fs-6 my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris quisque adipiscing lobortis aptent cras et justo. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris quisque adipiscing
+                        lobortis aptent cras et justo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center lead fw-bold fs-1 my-5">Super Bikes</p>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-4 col-12">
-                    <div class="card border-0">
+                    <div class="card rounded-0 border-0 mb-4">
                         <div class="card-body">
-                            <img class="img-fluid" src="RE-Hunter-350.jpg" alt="" width="500" height="500">
-                             <p class="lead text-center fw-bold fs-4 mt-3">Hunter 350</p>
-                             <p>Hunter a product of royalenfield will come very soon</p>
+                            <img class="img-fluid" src="Top 10 Ten Sportsbikes Price Spec_10.webp" alt="">
+                            <p class="lead text-center fw-bold fs-4 my-3">Sportsbikes</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12">
-                    <div class="card border-0">
+                    <div class="card rounded-0 border-0 mb-4">
                         <div class="card-body">
-                            <img class="img-fluid" src="2021-triumph-trident-660-price-specs-3.jpg" alt="" width="500" height="500">
-                             <p class="lead text-center fw-bold fs-4 mt-3">Trident 660</p>
-                           <p>Hunter a product of royalenfield will come very soon</p>
+                            <img class="img-fluid" src="indian-roadmaster.jpg" alt="">
+                            <p class="lead text-center fw-bold fs-4 my-3">Cruser Bike</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12">
-                    <div class="card  border-0">
+                    <div class="card rounded-0 border-0 mb-4">
                         <div class="card-body">
-                            <img class="img-fluid" src="Hero-XPulse-1.webp" alt="" width="500" height="500">
-                             <p class="lead text-center fw-bold fs-4 my-3">Hero Xpulse</p>
-                            <p>Hunter a product of royalenfield will come very soon</p>
+                            <img class="img-fluid" src="2023-bmw-r-1250-gs-buyers-guide-2.webp" alt="">
+                            <p class="lead text-center fw-bold fs-4 my-3">Touring Bike</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="ducati-scrambler-cafe-racer-standard20200729210342.webp" alt="">
+                            <p class="lead text-center fw-bold fs-4 my-3">Scramler Bike</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="pan-america-1250-right-side-view.webp" alt="">
+                            <p class="lead text-center fw-bold fs-4 my-3">Adventure Bike</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="Kawasaki-H2-SX-SE.jpg.webp" alt="">
+                            <p class="lead text-center fw-bold fs-4 my-3">Sports Touring Bike</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-  
+    <section id="bg-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-12"></div>
+                <div class="col-md-4 col-12">
+                    <div class="card anime-card-bg shadow-lg border-0 my-5">
+                        <div class="card-body py-5">
+                            <h1 class="text-center fw-bold display-6">
+                            </h1>
+                            <h1 class="text-center">
+                                <span class="text-danger fw-bold display-6">BikeGuru </span><br>
+                                <span>Dream until </span><br>
+                                <span class="text-danger">your Dream </span><br>
+                                <span>Come True</span>
+                            </h1>
+                            <div class="text-center mt-5">
+                                <a href="contact" class="btn btn-danger rounded-pill shadow-none px-5 py-3">Get
+                                    in touch with us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center lead fs-1 fw-bold my-5">Normal Bikes</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="Rs200.png" alt="" width="500" height="500">
+                            <p class="lead text-center fw-bold fs-4 my-3">Sports Bikes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="Meteor-350-pics-3-405x280.png" alt="" width="500" height="500">
+                            <p class="lead text-center fw-bold fs-4 my-3">Cruser Bike</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="Dominar-400-Blue-3-oclock.png" alt="" width="500" height="500">
+                            <p class="lead text-center fw-bold fs-4 my-3">Touring Bike</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="yezdi-scrambler-334-outlaw-olive.jpg" alt="" width="500"
+                                height="500">
+                            <p class="lead text-center fw-bold fs-4 my-3">Scramler-Bike</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="TVS-Ntorq-125.jpg" alt="" width="500" height="500">
+                            <p class="lead text-center fw-bold fs-4 my-3">Scooter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="ather-340.jpg" alt="" width="500" height="500">
+                            <p class="lead text-center fw-bold fs-4 my-3">Electric Scooter</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center lead fs-1 fw-bold my-5">Upcomming Bikes</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 mb-4">
+                        <div class="card-body text-center">
+                            <img class="img-fluid" src="RE-Hunter-350.jpg" alt="">
+                            <h3 class="lead fw-bold fs-4 mt-3">Hunter 350</h3>
+                            <hr class="d-block border border-dark mx-auto w-50 my-2">
+                            <p class="lead fs-5">Hunter a product of Royal Enfield will come very soon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card shadow rounded-0 border-0">
+                        <div class="card-body text-center">
+                            <img class="img-fluid" src="2021-triumph-trident-660-price-specs-3.jpg" alt="">
+                            <h3 class="lead fw-bold fs-4 mt-3">Trident 660</h3>
+                            <hr class="d-block border border-dark mx-auto w-50 my-2">
+                            <p class="lead fs-5">Hunter a product of Royal Enfield will come very soon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 mb-4">
+                        <div class="card-body text-center">
+                            <img class="img-fluid" src="Hero-XPulse-1.webp" alt="">
+                            <h3 class="lead fw-bold fs-4 mt-3">Hero Xpulse</h3>
+                            <hr class="d-block border border-dark mx-auto w-50 my-2">
+                            <p class="lead fs-5">Hunter a product of Royal Enfield will come very soon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="bg-dark">
         <div class="container">
             <div class="row">
