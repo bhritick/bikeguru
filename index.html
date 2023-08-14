@@ -8,6 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <style>
+        a {
+            text-decoration: none;
+        }
+
         .card:hover div hr {
             width: 100% !important;
         }
@@ -62,6 +66,40 @@
         @keyframes linebganim {
             50% {
                 background-position: center;
+            }
+        }
+
+        a div.card:hover div img {
+            animation: myAnim 2s ease 0s 1 normal forwards;
+        }
+
+        @keyframes myAnim {
+            0% {
+                transform: scale3d(1, 1, 1);
+            }
+
+            30% {
+                transform: scale3d(1.25, 0.75, 1);
+            }
+
+            40% {
+                transform: scale3d(0.75, 1.25, 1);
+            }
+
+            50% {
+                transform: scale3d(1.15, 0.85, 1);
+            }
+
+            65% {
+                transform: scale3d(0.95, 1.05, 1);
+            }
+
+            75% {
+                transform: scale3d(1.05, 0.95, 1);
+            }
+
+            100% {
+                transform: scale3d(1, 1, 1);
             }
         }
     </style>
@@ -120,7 +158,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="brands">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -130,7 +168,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-3 col-12">
+                <div class="col-lg-2 col-md-3 col-6">
                     <a class="streched-link" href="#">
                         <div class="card card-hover rounded-0 border-0">
                             <div class="card-body">
@@ -140,7 +178,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-3 col-12">
+                <div class="col-lg-2 col-md-3 col-6">
                     <a class="streched-link" href="#">
                         <div class="card card-hover rounded-0 border-0">
                             <div class="card-body">
@@ -150,7 +188,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-3 col-12">
+                <div class="col-lg-2 col-md-3 col-6">
                     <a class="streched-link" href="#">
                         <div class="card card-hover rounded-0 border-0">
                             <div class="card-body">
@@ -160,7 +198,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-3 col-12">
+                <div class="col-lg-2 col-md-3 col-6">
                     <a class="streched-link" href="#">
                         <div class="card card-hover rounded-0 border-0">
                             <div class="card-body">
@@ -170,7 +208,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-3 col-12">
+                <div class="col-lg-2 col-md-3 col-6">
                     <a class="streched-link" href="enfield">
                         <div class="card card-hover rounded-0 border-0">
                             <div class="card-body">
@@ -180,7 +218,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-3 col-12">
+                <div class="col-lg-2 col-md-3 col-6">
                     <a class="streched-link" href="#">
                         <div class="card card-hover rounded-0 border-0">
                             <div class="card-body">
@@ -190,7 +228,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-3 col-12">
+                <div class="col-lg-2 col-md-3 col-6">
                     <a class="streched-link" href="#">
                         <div class="card card-hover rounded-0 border-0">
                             <div class="card-body">
@@ -200,7 +238,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-3 col-12">
+                <div class="col-lg-2 col-md-3 col-6">
                     <a class="streched-link" href="#">
                         <div class="card card-hover rounded-0 border-0">
                             <div class="card-body">
@@ -210,7 +248,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-3 col-12">
+                <div class="col-lg-2 col-md-3 col-6">
                     <a class="streched-link" href="#">
                         <div class="card card-hover rounded-0 border-0">
                             <div class="card-body">
@@ -220,7 +258,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-3 col-12">
+                <div class="col-lg-2 col-md-3 col-6">
                     <a class="streched-link" href="#">
                         <div class="card card-hover rounded-0 border-0">
                             <div class="card-body">
@@ -230,7 +268,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-3 col-12">
+                <div class="col-lg-2 col-md-3 col-6">
                     <a class="streched-link" href="#">
                         <div class="card card-hover rounded-0 border-0">
                             <div class="card-body">
@@ -240,7 +278,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-3 col-12">
+                <div class="col-lg-2 col-md-3 col-6">
                     <a class="streched-link" href="#">
                         <div class="card card-hover rounded-0 border-0">
                             <div class="card-body">
@@ -285,7 +323,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="super-bikes">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -369,7 +407,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="normal-bikes">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -429,7 +467,7 @@
             </div>
         </div>
     </section>
-    <section class="mb-5">
+    <section id="upcoming-bikes" class="mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -438,14 +476,16 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-12">
-                    <div class="card rounded-0 mb-4">
-                        <div class="card-body text-center">
-                            <img class="img-fluid" src="RE-Hunter-350.jpg" alt="">
-                            <h3 class="lead fw-bold fs-4 mt-3">Hunter 350</h3>
-                            <hr class="d-block border border-dark mx-auto w-50 my-2">
-                            <p class="lead fs-5">Hunter a product of Royal Enfield will come very soon</p>
+                    <a href="#" class="streched-link">
+                        <div class="card text-dark rounded-0 mb-4">
+                            <div class="card-body text-center">
+                                <img class="img-fluid" src="RE-Hunter-350.jpg" alt="">
+                                <h3 class="lead fw-bold fs-4 mt-3">Hunter 350</h3>
+                                <hr class="d-block border border-dark mx-auto w-50 my-2">
+                                <p class="lead fs-5">Hunter a product of Royal Enfield will come very soon</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="card shadow rounded-0 border-0">
