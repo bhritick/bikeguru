@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,117 +8,99 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <style>
-        
+        .stretched-link {
+            text-decoration: none;
+        }
+
         #bg-1 {
-            background-image: url(gt-650white.jfif);
+            background-image: url(tvs1.jpeg);
             background-position: center;
             background-size: cover;
-            height: 500px;
+            background-attachment: fixed;
+            /* height: 500px; */
         }
-       #bg-2 {
-            background-image: url(royal-enfield-hunter-350-model-image-4.jpeg);
+
+        #bg-2 {
+            background-image: url(tvs9.jpeg);
             background-position: center;
             background-size: cover;
-             height: 450px;
-        }
-         #slide-bg1 {
-            background-image: url(tvs-310.webp);
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-             height: 400px;
+            background-attachment: fixed;
         }
 
-        #slide-bg2 {
-            background-image: url(ronin.webp);
+        .line-bg {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1127%26quot%3b)' fill='none'%3e%3cpath d='M -1023.5674562595411%2c493 C -879.57%2c408.6 -591.57%2c74.4 -303.5674562595412%2c71 C -15.57%2c67.6 128.43%2c466.4 416.4325437404588%2c476 C 704.43%2c485.6 931.72%2c133.2 1136.4325437404589%2c119 C 1341.15%2c104.8 1379.29%2c347.8 1440%2c405' stroke='rgba(255%2c 253%2c 14%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -943.8325763785838%2c82 C -799.83%2c157 -511.83%2c425.2 -223.83257637858375%2c457 C 64.17%2c488.8 208.17%2c267.2 496.1674236214162%2c241 C 784.17%2c214.8 1027.4%2c321.6 1216.1674236214162%2c326 C 1404.93%2c330.4 1395.23%2c275.6 1440%2c263' stroke='rgba(255%2c 253%2c 14%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -540.2677688842664%2c298 C -396.27%2c277.8 -108.27%2c176.4 179.73223111573358%2c197 C 467.73%2c217.6 611.73%2c427.2 899.7322311157336%2c401 C 1187.73%2c374.8 1511.68%2c77.4 1619.7322311157336%2c66 C 1727.79%2c54.6 1475.95%2c288.4 1440%2c344' stroke='rgba(255%2c 253%2c 14%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -201.13514570389145%2c70 C -57.14%2c133.8 230.86%2c365 518.8648542961085%2c389 C 806.86%2c413 950.86%2c198.4 1238.8648542961087%2c190 C 1526.86%2c181.6 1918.64%2c345.4 1958.8648542961087%2c347 C 1999.09%2c348.6 1543.77%2c227.8 1440%2c198' stroke='rgba(255%2c 253%2c 14%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -419.53467968993084%2c82 C -275.53%2c136.4 12.47%2c329.2 300.46532031006916%2c354 C 588.47%2c378.8 732.47%2c185 1020.4653203100692%2c206 C 1308.47%2c227 1656.56%2c455.6 1740.4653203100693%2c459 C 1824.37%2c462.4 1500.09%2c270.2 1440%2c223' stroke='rgba(255%2c 253%2c 14%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -276.24677894302863%2c156 C -132.25%2c206.2 155.75%2c405.6 443.75322105697137%2c407 C 731.75%2c408.4 875.75%2c179 1163.7532210569714%2c163 C 1451.75%2c147 1828.5%2c328.8 1883.7532210569714%2c327 C 1939%2c325.2 1528.75%2c188.6 1440%2c154' stroke='rgba(255%2c 253%2c 14%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1127'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
             background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            height: 400px;
+            background-attachment: fixed;
+            animation: linebganim 15s infinite;
         }
 
-        #slide-bg3 {
-            background-image: url(tvs-200v.webp);
+        .shape-bg {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1455%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3crect width='213.6' height='213.6' clip-path='url(%26quot%3b%23SvgjsClipPath1456%26quot%3b)' x='215.91' y='274.05' fill='url(%26quot%3b%23SvgjsPattern1457%26quot%3b)' transform='rotate(319.02%2c 322.71%2c 380.85)'%3e%3c/rect%3e%3crect width='336' height='336' clip-path='url(%26quot%3b%23SvgjsClipPath1458%26quot%3b)' x='150.57' y='358.28' fill='url(%26quot%3b%23SvgjsPattern1459%26quot%3b)' transform='rotate(284.32%2c 318.57%2c 526.28)'%3e%3c/rect%3e%3ccircle r='90.58773545714064' cx='550.55' cy='260.96' stroke='rgba(255%2c 234%2c 0%2c 1)' stroke-width='2.79' stroke-dasharray='3%2c 3'%3e%3c/circle%3e%3cpath d='M579.49 271.14L580.59 258.38 593.28 256.65 594.38 243.89 607.07 242.17 608.17 229.41 620.86 227.68' stroke='rgba(255%2c 234%2c 0%2c 1)' stroke-width='1.62' stroke-dasharray='4%2c 4'%3e%3c/path%3e%3cpath d='M931.27 347.91L938.43 337.29 950.36 341.95 957.52 331.33 969.45 335.98 976.61 325.37 988.54 330.02M933.66 355.55L940.82 344.93 952.75 349.58 959.91 338.97 971.84 343.62 979 333 990.93 337.66' stroke='rgba(244%2c 67%2c 54%2c 1)' stroke-width='1.63' stroke-dasharray='3%2c 2'%3e%3c/path%3e%3cpath d='M993.23 117.84 L907.14 166.58999999999997L998.517799040826 190.54779904082613z' stroke='rgba(2%2c 119%2c 189%2c 1)' stroke-width='2.42' stroke-dasharray='3%2c 3'%3e%3c/path%3e%3ccircle r='66.5126594244899' cx='141.85' cy='452.87' stroke='rgba(244%2c 67%2c 54%2c 1)' stroke-width='1'%3e%3c/circle%3e%3crect width='95' height='95' clip-path='url(%26quot%3b%23SvgjsClipPath1460%26quot%3b)' x='1190.16' y='112.99' fill='url(%26quot%3b%23SvgjsPattern1461%26quot%3b)' transform='rotate(189.54%2c 1237.66%2c 160.49)'%3e%3c/rect%3e%3cpath d='M1021.49 7.93a5.6 5.6 0 1 0-10.69-3.37 5.6 5.6 0 1 0 10.69 3.37zM1006.23 3.11a5.6 5.6 0 1 0-10.68-3.37 5.6 5.6 0 1 0 10.68 3.37zM990.97-1.7a5.6 5.6 0 1 0-10.68-3.37 5.6 5.6 0 1 0 10.68 3.37zM975.71-6.52a5.6 5.6 0 1 0-10.68-3.37 5.6 5.6 0 1 0 10.68 3.37zM1056.82 2.29a5.6 5.6 0 1 0-10.68-3.37 5.6 5.6 0 1 0 10.68 3.37zM1041.56-2.52a5.6 5.6 0 1 0-10.68-3.37 5.6 5.6 0 1 0 10.68 3.37zM1026.3-7.33a5.6 5.6 0 1 0-10.68-3.37 5.6 5.6 0 1 0 10.68 3.37zM1011.04-12.15a5.6 5.6 0 1 0-10.68-3.37 5.6 5.6 0 1 0 10.68 3.37z' fill='rgba(255%2c 234%2c 0%2c 1)'%3e%3c/path%3e%3crect width='274.12' height='274.12' clip-path='url(%26quot%3b%23SvgjsClipPath1462%26quot%3b)' x='1252.45' y='183.11' fill='url(%26quot%3b%23SvgjsPattern1463%26quot%3b)' transform='rotate(149.36%2c 1389.51%2c 320.17)'%3e%3c/rect%3e%3cpath d='M95.24 439.02L89.82 450.63 77.31 447.89 71.9 459.5 59.39 456.76 53.97 468.36 41.46 465.63M91.69 431.85L86.28 443.46 73.77 440.72 68.35 452.33 55.84 449.59 50.42 461.19 37.91 458.46M88.15 424.68L82.73 436.29 70.22 433.55 64.8 445.16 52.29 442.42 46.88 454.02 34.37 451.29' stroke='rgba(2%2c 119%2c 189%2c 1)' stroke-width='1.93'%3e%3c/path%3e%3cpath d='M347.55 72.21L341.87 60.73 351.81 52.66 346.12 41.19 356.07 33.12 350.38 21.65 360.33 13.58M355.37 73.91L349.68 62.43 359.63 54.37 353.94 42.89 363.89 34.83 358.2 23.35 368.14 15.28' stroke='rgba(255%2c 234%2c 0%2c 1)' stroke-width='2.54'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1455'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpattern x='0' y='0' width='7.12' height='7.12' patternUnits='userSpaceOnUse' id='SvgjsPattern1457'%3e%3cpath d='M0 7.12L3.56 0L7.12 7.12' stroke='rgba(2%2c 119%2c 189%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1456'%3e%3ccircle r='53.4' cx='322.71' cy='380.85'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1459'%3e%3cpath d='M0 6L3 0L6 6' stroke='rgba(244%2c 67%2c 54%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1458'%3e%3ccircle r='84' cx='318.57' cy='526.28'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='9.5' height='9.5' patternUnits='userSpaceOnUse' id='SvgjsPattern1461'%3e%3cpath d='M0 9.5L4.75 0L9.5 9.5' stroke='rgba(255%2c 234%2c 0%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1460'%3e%3ccircle r='23.75' cx='1237.66' cy='160.49'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='12.46' height='12.46' patternUnits='userSpaceOnUse' id='SvgjsPattern1463'%3e%3cpath d='M6.23 1L6.23 11.46M1 6.23L11.46 6.23' stroke='rgba(2%2c 119%2c 189%2c 1)' fill='none' stroke-width='2.56'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1462'%3e%3ccircle r='68.53' cx='1389.51' cy='320.17'%3e%3c/circle%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
             background-size: cover;
-            background-position: center center;
             background-repeat: no-repeat;
-            height: 400px;
-        }
-        #slide-bg4 {
-            background-image: url(gt-650-1.jpg);
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            height: 300px;
         }
 
-        #slide-bg5 {
-            background-image: url(gt-2.jpg);
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            height: 300px;
+        @keyframes linebganim {
+            50% {
+                background-position: center;
+            }
         }
 
-        #slide-bg6 {
-            background-image: url(gt-3.JPG);
+        /* .anime-card-bg {
+            background-position: center;
             background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            height: 300px;
-        }
-        #slide-bg7 {
-            background-image: url(Himalayan-2.jpg);
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            height: 300px;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='320' height='360' preserveAspectRatio='none' viewBox='0 0 320 360'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1040%26quot%3b)' fill='none'%3e%3cpath d='M212.459%2c164.549C247.754%2c167.371%2c281.99%2c147.392%2c299.073%2c116.377C315.632%2c86.315%2c308.902%2c50.319%2c291.752%2c20.59C274.589%2c-9.162%2c246.806%2c-33.914%2c212.459%2c-33.769C178.314%2c-33.625%2c148.963%2c-9.589%2c134.313%2c21.253C121.451%2c48.331%2c132.564%2c77.891%2c146.917%2c104.21C162.155%2c132.153%2c180.732%2c162.012%2c212.459%2c164.549' fill='rgba(248%2c 240%2c 24%2c 0.79)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M203.663%2c274.147C214.445%2c274.043%2c224.768%2c268.694%2c229.882%2c259.201C234.77%2c250.128%2c232.573%2c239.268%2c227.187%2c230.481C222.071%2c222.134%2c213.448%2c216.749%2c203.663%2c216.427C193.257%2c216.084%2c182.821%2c220.015%2c177.294%2c228.839C171.437%2c238.191%2c170.997%2c250.18%2c176.548%2c259.717C182.067%2c269.201%2c192.691%2c274.253%2c203.663%2c274.147' fill='rgba(248%2c 240%2c 24%2c 0.79)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M309.27%2c421.812C329.536%2c420.482%2c347.614%2c411.085%2c359%2c394.267C372.233%2c374.722%2c382.249%2c350.619%2c371.801%2c329.454C360.396%2c306.351%2c335.031%2c293.995%2c309.27%2c293.526C282.627%2c293.041%2c256.006%2c304.035%2c242.671%2c327.105C229.327%2c350.192%2c231.446%2c379.819%2c246.785%2c401.632C260.279%2c420.821%2c285.861%2c423.348%2c309.27%2c421.812' fill='rgba(248%2c 240%2c 24%2c 0.79)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-14.35 196.3 a58.79 58.79 0 1 0 117.58 0 a58.79 58.79 0 1 0 -117.58 0z' fill='rgba(248%2c 240%2c 24%2c 0.79)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M34.149%2c368.588C47.197%2c368.653%2c58.307%2c360.105%2c64.861%2c348.823C71.45%2c337.482%2c74.162%2c323.107%2c66.926%2c312.168C60.184%2c301.977%2c46.367%2c302.257%2c34.149%2c302.397C22.285%2c302.533%2c9.143%2c302.974%2c2.645%2c312.902C-4.329%2c323.557%2c-2.31%2c337.438%2c3.96%2c348.521C10.337%2c359.793%2c21.198%2c368.524%2c34.149%2c368.588' fill='rgba(248%2c 240%2c 24%2c 0.79)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1040'%3e%3crect width='320' height='360' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+        } */
+
+        .carousel-caption {
+            position: absolute;
+            width: 70%;
+            right: 15%;
+            left: 15%;
+            top: 30%;
+            text-align: center;
+            text-shadow: #000000 0px 0px 4px;
         }
 
-        #slide-bg8 {
-            background-image: url(Himalayan-3.jpg);
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            height: 300px;
+        div a.stretched-link:hover div {
+            animation: myAnim 2s ease 0s 1 normal forwards;
         }
 
-        #slide-bg9 {
-            background-image: url(Himalayan-4.jpg);
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            height: 300px;
-        }
-        #slide-bg10 {
-            background-image: url(classic-1.jpg);
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            height: 300px;
-        }
+        @keyframes myAnim {
+            0% {
+                transform: scale3d(1, 1, 1);
+            }
 
-        #slide-bg11 {
-            background-image: url(classic-2.jpg);
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            height: 300px;
-        }
+            30% {
+                transform: scale3d(1.25, 0.75, 1);
+            }
 
-        #slide-bg12 {
-            background-image: url(classic-3jpg.jpg);
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            height: 300px;
+            40% {
+                transform: scale3d(0.75, 1.25, 1);
+            }
+
+            50% {
+                transform: scale3d(1.15, 0.85, 1);
+            }
+
+            65% {
+                transform: scale3d(0.95, 1.05, 1);
+            }
+
+            75% {
+                transform: scale3d(1.05, 0.95, 1);
+            }
+
+            100% {
+                transform: scale3d(1, 1, 1);
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <!-- <a class="navbar-brand" href="#">
                     <img src="https://img.freepik.com/free-vector/law-office_497289-40.jpg?w=740" alt="" width="30" height="24">
@@ -128,12 +111,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav lead fw-bold mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="enfield.html">Aboutus</a>
+                            <a class="nav-link" href="enfield.html">About us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="service.html">Services</a>
@@ -145,223 +128,144 @@
             </div>
         </nav>
     </header>
-    <section">
+    <section id="bg-1">
         <div class="bg-fade">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="card rounded-0 border-0">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner" id="slide-bg1">
-                              <div class="carousel-item active">
-                              </div>
-                              <div class="carousel-item" id="slide-bg2">
-                              </div>
-                              <div class="carousel-item" id="slide-bg3">
-                              </div>
-                            </div>
-                         </div>
-                     </div>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-    <section class="my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1 col-12"></div>
-                <div class="col-md-10 col-12">
-                    <h2 class="text-center text-danger lead fs-1 fw-bold my-3">Royal Enfield</h2>
-                    <p class="lead fs-6 my-5">Royal Enfield is a renowned motorcycle manufacturer based in India. The company has a rich history that dates back to 1893 when it was established in Redditch, England. Initially, Royal Enfield produced motorcycles, bicycles, and stationary engines.
-                        Royal Enfield gained popularity for its rugged motorcycles and powerful engines. Over the years, it has become an iconic brand known for its classic and vintage-inspired designs. The distinctive thumping sound produced by its engines has also become synonymous with the Royal Enfield brand.
-                        In 1955, the production of Royal Enfield motorcycles shifted entirely to India. </div>
-                 <div class="col-md-1 col-12"></div>
-
-            </div>
-        </div>
-    </section>
-     <section class="">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 col-12 px-0">
-                    <div class="card rounded-0 border-0">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner" id="slide-bg1">
-                              <div class="carousel-item active">
-                              </div>
-                              <div class="carousel-item" id="slide-bg2">
-                              </div>
-                              <div class="carousel-item" id="slide-bg3">
-                              </div>
-                            </div>
-                         </div>
-                          <p class="lead text-center text-danger fw-bold fs-4 my-3">Meteor-350</p>
-                          <p class="text-center"> 349cc, single-cylinder engine<br> 20.2 BHp, 27 Nm torque at 4,000 rpm.</p>
-                    </div>
-                  
-                </div>
-                <div class="col-md-3 col-12 px-0">
-                    <div class="card rounded-0 border-0">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner" id="slide-bg4">
-                              <div class="carousel-item active">
-                              </div>
-                              <div class="carousel-item" id="slide-bg5">
-                              </div>
-                              <div class="carousel-item" id="slide-bg6">
-                              </div>
-                            </div>
-                         </div>
-                          <p class="lead text-center text-danger fw-bold fs-4 my-3">GT-650</p>
-                           <p class="text-center"> 648cc parallel-twin engine <br> 47 BHp, 52 Nm Nm torque at 5,250 rpm.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-12 px-0">
-                    <div class="card rounded-0 border-0">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner" id="slide-bg7">
-                              <div class="carousel-item active">
-                              </div>
-                              <div class="carousel-item" id="slide-bg8">
-                              </div>
-                              <div class="carousel-item" id="slide-bg9">
-                              </div>
-                            </div>
-                         </div>
-                          <p class="lead text-center text-danger fw-bold fs-4 my-3">Himalayan-411</p>
-                           <p class="text-center"> 411cc, single-cylinder engine <br> 24.3 BHp, 32 Nm Nm torque at 4,250 rpm.</p>
-                       </div>
-
-                </div>
-                <div class="col-md-3 col-12 px-0">
-                    <div class="card rounded-0 border-0">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner" id="slide-bg10">
-                              <div class="carousel-item active">
-                              </div>
-                              <div class="carousel-item" id="slide-bg11">
-                              </div>
-                              <div class="carousel-item" id="slide-bg12">
-                              </div>
-                            </div>
-                         </div>
-                          <p class="lead text-center text-danger fw-bold fs-4 my-3">Classic-350</p>
-                           <p class="text-center"> 349cc, single-cylinder engine <br> 19.8 BHp, 28 Nm Nm torque at 4,000 rpm.</p>
-                    </div>
-                </div>
-             </div>
-       </div>
-    </section>
-      <section id="bg-2">
-        <div class="my-5 py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-9 col-12"></div>
-                    <div class="col-md-3 col-12">
-                        <div class="my-5 py-5">
-                            <h1 class="text-dark fw-bold  display-6">A brand new Bike from Royal Enfield Hunter 350</h1>
-                           <button type="button" class="btn btn-outline-danger border-2" disabled>Primary button</button>
-                          </div>
-                     </div>
+                    <div class="col-md-8 col-12"></div>
+                    <div class="col-md-4 col-12">
+                        <div class="card anime-card-bg shadow-lg border-0 my-5">
+                            <div class="card-body py-5">
+                                <h1 class="fw-bold text-center display-6"><span class="text-danger">Marketing</span>
+                                    is <br />not <br />enough <br />you <br />need <span
+                                        class="text-danger">Sales</span>!</h1>
+                                <div class="text-center mt-5">
+                                    <a href="contact.html" class="btn btn-danger rounded-pill shadow-none px-5 py-3">Get
+                                        in touch with us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="container my-5">
-            <div class="col-12">
-                <p class="text-center lead fs-1 fw-bold my-5">Upcomming Bikes</p>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-12 px-0">
-                    <div class="card border-0 px-0">
-                        <div class="card-body px-0">
-                            <img class="img-fluid" src="RE-Hunter-350.jpg" alt="" width="500" height="500">
-                             <p class="lead text-center fw-bold fs-4 mt-3">Hunter 350</p>
-                             <p>Hunter a product of royalenfield will come very soon</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-12 px-0">
-                    <div class="card border-0 px-0">
-                        <div class="card-body px-0">
-                            <img class="img-fluid" src="2021-triumph-trident-660-price-specs-3.jpg" alt="" width="500" height="500">
-                             <p class="lead text-center fw-bold fs-4 mt-3">Trident 660</p>
-                           <p>Hunter a product of royalenfield will come very soon</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-12 px-0">
-                    <div class="card  border-0 px-0">
-                        <div class="card-body px-0">
-                            <img class="img-fluid" src="Hero-XPulse-1.webp" alt="" width="500" height="500">
-                             <p class="lead text-center fw-bold fs-4 my-3">Hero Xpulse</p>
-                            <p>Hunter a product of royalenfield will come very soon</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-12 px-0">
-                    <div class="card  border-0 px-0">
-                        <div class="card-body px-0">
-                            <img class="img-fluid" src="Hero-XPulse-1.webp" alt="" width="500" height="500">
-                             <p class="lead text-center fw-bold fs-4 my-3">Hero Xpulse</p>
-                            <p>Hunter a product of royalenfield will come very soon</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="my-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-12">
-                    <div class="card shadow  rounded-0 border-0 h-100">
-                        <p class="lead fs-4">RS-200</p>
-                        <div class="card-body">
-                            <div class="row ">
-                                <div class="col-md-4 ">
-                                    <img src="Rs200.png" class="img-fluid d-block mx-auto" alt="alternative text ">
+                <div class="col-md-1 col-12"></div>
+                <div class="col-md-10 col-12">
+                    <h2 class="text-center lead fs-2 fw-bold my-5 pt-5">TVS Bike Company: Pioneering Performance and Innovation in the Two-Wheeler Industry</h2>
+                  <p class="text-center lead fs-6 my-5" >In the dynamic landscape of the two-wheeler industry, TVS Bike Company has emerged as a trailblazer, consistently setting new benchmarks for performance, innovation, and customer satisfaction. With a legacy spanning decades, TVS has etched its name in the hearts of motorcycle enthusiasts and commuters alike. This article delves into the captivating journey, exceptional features, and the high-value Google Trends following keywords that have propelled TVS to the pinnacle of the industry.The Founded in 1979, TVS Bike Company has steadily evolved into a global powerhouse, recognized for its commitment to excellence and unwavering dedication to delivering top-notch two-wheelers. With a vision to craft vehicles that blend cutting-edge technology with unmatched reliability, TVS has consistently remained at the forefront of innovation, captivating the market.</p>
+                </div>
+                <div class="col-md-1 col-12"></div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-12 px-0">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="tvs7.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <p class="lead fw-bold fs-2">Meteor-350</p>
+                                    <p class="lead fs-3">349cc | 20.2 BHp</p>
                                 </div>
-                                <div class="col-md-8 ">
-                                    <div class="card-body ">
-                                        <p class="lead fs-4 ">RS-200</p>
-                                        <p class="lead fs-6 ">If you're looking for an overall 200cc bike in less budget range for city riding and long rides, RS200 is the way to go.</p>
-                                    </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="tvs8.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <p class="lead fw-bold fs-2">Meteor-350</p>
+                                    <p class="lead fs-3">27Nm Torque @ 4000rpm</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="tvs9.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <p class="lead fw-bold fs-2">Meteor-350</p>
+                                    <p class="lead fs-3">Single-Cylinder Engine</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-12">
-                    <div class="card shadow rounded-0 border-0 h-100">
-                        <div class="card-body">
-                            <div class="row g-0 ">
-                                <div class="col-md-4 ">
-                                    <img src="https://images.pexels.com/photos/52527/dentist-pain-borowac-cure-52527.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" class="img-fluid d-block mx-auto my-3 " alt="alternative text ">
+                <div class="col-md-6 col-12 px-0">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="tvs7.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <p class="lead fw-bold fs-2">GT-650</p>
+                                    <p class="lead fs-3">648cc | 47 BHp</p>
                                 </div>
-                                <div class="col-md-8 ">
-                                    <div class="card-body ">
-                                        <p class="lead fs-4 ">Center-aligned media</p>
-                                        <p class="lead fs-6 ">She'll turn cold as a freezer. At the eh-end of it all. Stinging like a bee I earned my stripes. Bikinis, zucchinis, Martinis, no weenies. I hope you got a healthy appetite.</p>
-                                    </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="tvs8.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <p class="lead fw-bold fs-2">GT-650</p>
+                                    <p class="lead fs-3">52Nm Torque @ 5250rpm</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="tvs9.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <p class="lead fw-bold fs-2">GT-650</p>
+                                    <p class="lead fs-3">Parallel-Twin Engine</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-12">
-                    <div class="card shadow rounded-0 border-0 h-100">
-                        <div class="card-body">
-                            <div class="row g-0 ">
-                                <div class="col-md-4 ">
-                                    <img src="https://images.pexels.com/photos/52527/dentist-pain-borowac-cure-52527.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" class="img-fluid d-block mx-auto my-3 " alt="alternative text ">
+                <div class="col-md-6 col-12 px-0">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="tvs9.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <p class="lead fw-bold fs-2">Himalayan-411</p>
+                                    <p class="lead fs-3">411cc | 24.3 BHp</p>
                                 </div>
-                                <div class="col-md-8 ">
-                                    <div class="card-body ">
-                                        <p class="lead fs-4 ">Center-aligned media</p>
-                                        <p class="lead fs-6 ">She'll turn cold as a freezer. At the eh-end of it all. Stinging like a bee I earned my stripes. Bikinis, zucchinis, Martinis, no weenies. I hope you got a healthy appetite.</p>
-                                    </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="tvs8.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <p class="lead fw-bold fs-2">Himalayan-411</p>
+                                    <p class="lead fs-3">32Nm Torque @ 4250rpm</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="tvs7.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <p class="lead fw-bold fs-2">Himalayan-411</p>
+                                    <p class="lead fs-3">Single-Cylinder Engine</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 px-0">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="tvs9.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <p class="lead fw-bold fs-2">Classic-350</p>
+                                    <p class="lead fs-3">349cc | 19.8 BHp</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="tvs6.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <p class="lead fw-bold fs-2">Classic-350</p>
+                                    <p class="lead fs-3">28Nm Torque @ 4000rpm</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="tvs7.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <p class="lead fw-bold fs-2">Classic-350</p>
+                                    <p class="lead fs-3">Single-Cylinder Engine</p>
                                 </div>
                             </div>
                         </div>
@@ -369,8 +273,161 @@
                 </div>
             </div>
         </div>
+      </section>
+    <section class="shape-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-12">
+                    <div class="card border-0 my-5">
+                        <div class="card-body">
+                               <h2 class="text-center lead fs-2 fw-bold">TVS Bike Company: Innovative Engineering and Design</h2>
+                               <p class="lead fs-6">One of the cornerstones of TVS's success is its relentless pursuit of innovative engineering and design. Each TVS bike boasts a perfect fusion of form and function, a result of the company's tireless efforts to push boundaries. The company's design philosophy places equal emphasis on aesthetics and aerodynamics, resulting in bikes that not only turn heads but also deliver exceptional performance on the road.In an era where environmental consciousness is paramount, TVS Bike Company takes its commitment to sustainability seriously. The company has pioneered the development of eco-friendly technologies, such as fuel-efficient engines and reduced emissions, making its bikes not only a joy to ride but also a responsible choice for the planet.
+                               </p>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card border-0 my-5">
+                        <div class="card-body">
+                            <img src="TVS-Ntorq-125.jpg"
+                                height="250" class="d-block mx-auto" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-   
+    <section id="bg-2">
+        <div class="my-5 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-12"></div>
+                    <div class="col-md-4 col-12">
+                        <div class="card anime-card-bg shadow border-0 py-5">
+                            <div class="card-body">
+                                <h2 class="fw-bold text-center display-6">Hunter 350 <br>from</h2>
+                                <div class="text-center">
+                                    <img src="tvs6.jpeg"
+                                        width="200" height="200" alt="">
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="super-bikes">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center lead fw-bold fs-1 my-5">Super Bikes</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="jupiter.jpg" alt="">
+                            <p class="lead text-center fw-bold fs-4 my-3">Sportsbikes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="indian-roadmaster.jpg" alt="">
+                            <p class="lead text-center fw-bold fs-4 my-3">Cruser Bike</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="2023-bmw-r-1250-gs-buyers-guide-2.webp" alt="">
+                            <p class="lead text-center fw-bold fs-4 my-3">Touring Bike</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="ducati-scrambler-cafe-racer-standard20200729210342.webp" alt="">
+                            <p class="lead text-center fw-bold fs-4 my-3">Scramler Bike</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="pan-america-1250-right-side-view.webp" alt="">
+                            <p class="lead text-center fw-bold fs-4 my-3">Adventure Bike</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card rounded-0 border-0 mb-4">
+                        <div class="card-body">
+                            <img class="img-fluid" src="Kawasaki-H2-SX-SE.jpg.webp" alt="">
+                            <p class="lead text-center fw-bold fs-4 my-3">Sports Touring Bike</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="line-bg">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-0">
+                        <h2 class="text-center lead fs-1 fw-bold">Upcomming Bikes</h2>
+                        <p class="lead text-center">This is some placeholder content for the custom component. It is
+                            intended to mimic what some real-world content would look like, and we're using it here
+                            to give the component a bit of body and size.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <a href="#" class="stretched-link">
+                        <div class="card bg-dark text-white card-anim border-0 mb-4">
+                            <img src="RE-Hunter-350.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Hunter 350</h3>
+                                <p class="text-center">Hunter a product of royalenfield will come very soon</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-12">
+                    <a href="#" class="stretched-link">
+                        <div class="card shadow text-dark border-0 mb-4">
+                            <img src="Hero-XPulse-1.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Hero Xpulse</h3>
+                                <p class="text-center">Hunter a product of royalenfield will come very soon</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-12">
+                    <a href="#" class="stretched-link">
+                        <div class="card bg-dark text-white border-0 mb-4">
+                            <img src="2021-triumph-trident-660-price-specs-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="text-center">Trident 660</h3>
+                                <p class="text-center">Hunter a product of royalenfield will come very soon</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
     <footer class="bg-dark">
         <div class="container">
             <div class="row">
