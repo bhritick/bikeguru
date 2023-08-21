@@ -63,6 +63,43 @@
             animation: linebganim 15s infinite;
         }
 
+        /* flip anim */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+        /* flip anim */
+
         @keyframes linebganim {
             50% {
                 background-position: center;
@@ -332,53 +369,95 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0 mb-4">
-                        <div class="card-body">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
                             <img class="img-fluid" src="Top 10 Ten Sportsbikes Price Spec_10.webp" alt="">
-                            <p class="lead text-center fw-bold fs-4 my-3">Sportsbikes</p>
+                            <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>John Doe</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0 mb-4">
-                        <div class="card-body">
+                      </div>
+                   </div>
+                   <div class="col-md-4 col-12">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
                             <img class="img-fluid" src="indian-roadmaster.jpg" alt="">
-                            <p class="lead text-center fw-bold fs-4 my-3">Cruser Bike</p>
+                            <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>Cruser Bike</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0 mb-4">
-                        <div class="card-body">
+                      </div>
+                   </div>
+                   <div class="col-md-4 col-12">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
                             <img class="img-fluid" src="2023-bmw-r-1250-gs-buyers-guide-2.webp" alt="">
-                            <p class="lead text-center fw-bold fs-4 my-3">Touring Bike</p>
+                            <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>Adventure Bike</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0 mb-4">
-                        <div class="card-body">
+                      </div>
+                   </div>
+                   <div class="col-md-4 col-12">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
                             <img class="img-fluid" src="ducati-scrambler-cafe-racer-standard20200729210342.webp" alt="">
-                            <p class="lead text-center fw-bold fs-4 my-3">Scramler Bike</p>
+                            <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>Scramler Bike</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0 mb-4">
-                        <div class="card-body">
+                      </div>
+                   </div>
+                   <div class="col-md-4 col-12">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
                             <img class="img-fluid" src="pan-america-1250-right-side-view.webp" alt="">
-                            <p class="lead text-center fw-bold fs-4 my-3">Adventure Bike</p>
+                            <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>Adventure Bike</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0 mb-4">
-                        <div class="card-body">
+                      </div>
+                   </div>
+                   <div class="col-md-4 col-12">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
                             <img class="img-fluid" src="Kawasaki-H2-SX-SE.jpg.webp" alt="">
-                            <p class="lead text-center fw-bold fs-4 my-3">Sports Touring Bike</p>
+                            <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>Sports Touring Bike</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                          </div>
                         </div>
-                    </div>
-                </div>
+                      </div>
+                   </div>
             </div>
         </div>
     </section>
@@ -416,54 +495,95 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0 mb-4">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Rs200.png" alt="" width="500" height="500">
-                            <p class="lead text-center fw-bold fs-4 my-3">Sports Bikes</p>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img class="img-fluid" src="Rs200.png" alt="">
+                            <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>Sports Bike</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0 mb-4">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Meteor-350-pics-3-405x280.png" alt="" width="500" height="500">
-                            <p class="lead text-center fw-bold fs-4 my-3">Cruser Bike</p>
+                      </div>
+                   </div>
+                   <div class="col-md-4 col-12">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img class="img-fluid" src="Meteor-350-pics-3-405x280.png" alt="">
+                            <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>Cruser Bike</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0 mb-4">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Dominar-400-Blue-3-oclock.png" alt="" width="500" height="500">
-                            <p class="lead text-center fw-bold fs-4 my-3">Touring Bike</p>
+                      </div>
+                   </div>
+                   <div class="col-md-4 col-12">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img class="img-fluid" src="Dominar-400.jpg" alt="">
+                            <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>Touring Bike</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0 mb-4">
-                        <div class="card-body">
-                            <img class="img-fluid" src="yezdi-scrambler-334-outlaw-olive.jpg" alt="" width="500"
-                                height="500">
-                            <p class="lead text-center fw-bold fs-4 my-3">Scramler-Bike</p>
+                      </div>
+                   </div>
+                   <div class="col-md-4 col-12">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img class="img-fluid" src="yezdi-scrambler-334-outlaw-olive.jpg" alt="">
+                            <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>Scrambler Bike</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0 mb-4">
-                        <div class="card-body">
-                            <img class="img-fluid" src="TVS-Ntorq-125.jpg" alt="" width="500" height="500">
-                            <p class="lead text-center fw-bold fs-4 my-3">Scooter</p>
+                      </div>
+                   </div>
+                   <div class="col-md-4 col-12">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img class="img-fluid" src="TVS-Ntorq-125.jpg" alt="">
+                            <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>Scooter</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card rounded-0 border-0 mb-4">
-                        <div class="card-body">
-                            <img class="img-fluid" src="ather-340.jpg" alt="" width="500" height="500">
-                            <p class="lead text-center fw-bold fs-4 my-3">Electric Scooter</p>
+                      </div>
+                   </div>
+                   <div class="col-md-4 col-12">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img class="img-fluid" src="Ather-450X.jpg" alt="">
+                            <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>Electric Scooter</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                          </div>
                         </div>
-                    </div>
-                </div>
+                      </div>
+                   </div>
             </div>
         </div>
     </section>
