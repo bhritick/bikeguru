@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bike Guru</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- title KTM Duke 390 - Unveiling the Powerhouse of Performance -->
+    <!-- Explore the exhilarating world of the KTM Duke 390, its specifications, price, and why it's a favorite among motorcycle enthusiasts. Discover the ultimate riding experience with the KTM Duke 390. -->
+
+    <style>
+        /* Yellow Color Code : #FFEA00 */
+        .y-top-bg {
+            background: rgb(255, 234, 0);
+            background: linear-gradient(185deg, rgba(255, 234, 0, 1) 40%, rgba(255, 255, 255, 0) 40%);
+        }
+
+        .y-bottom-bg {
+            background: rgb(255, 234, 0);
+            background: linear-gradient(5deg, rgba(255, 234, 0, 1) 40%, rgba(255, 255, 255, 0) 40%);
+        }
+
+        .y-left-bg {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, rgba(255, 234, 0, 1) 50%);
+        }
+
+        .y-right-bg {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0) 50%, rgba(255, 234, 0, 1) 50%);
+        }
+
+        .y-mid-bg {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 40%, rgba(255, 234, 0, 1) 40%, rgba(255, 234, 0, 1) 60%, rgba(255, 255, 255, 0) 60%);
+        }
+
+        #y-bg-anim {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1600' height='800' preserveAspectRatio='none' viewBox='0 0 1600 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1079%26quot%3b)' fill='none'%3e%3crect width='1600' height='800' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M-133.05 26.39 a159.44 159.44 0 1 0 318.88 0 a159.44 159.44 0 1 0 -318.88 0z' fill='rgba(255%2c 234%2c 0%2c 0.39)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M200.004%2c385.56C276.744%2c385.239%2c360.37%2c380.936%2c403.79%2c317.66C452.203%2c247.106%2c454.747%2c151.721%2c410.87%2c78.26C367.974%2c6.442%2c283.563%2c-27.485%2c200.004%2c-23.526C123.084%2c-19.881%2c60.887%2c30.782%2c21.123%2c96.727C-20.273%2c165.38%2c-48.971%2c251.224%2c-6.761%2c319.38C34.077%2c385.32%2c122.443%2c385.885%2c200.004%2c385.56' fill='rgba(255%2c 234%2c 0%2c 0.39)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M-151.11 44.44 a195.55 195.55 0 1 0 391.1 0 a195.55 195.55 0 1 0 -391.1 0z' fill='rgba(255%2c 234%2c 0%2c 0.39)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1336.87 -3.54 a99.59 99.59 0 1 0 199.18 0 a99.59 99.59 0 1 0 -199.18 0z' fill='rgba(255%2c 234%2c 0%2c 0.39)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1485.876%2c117.746C1515.293%2c118.868%2c1548.179%2c115.818%2c1563.757%2c90.84C1579.971%2c64.842%2c1572.066%2c31.477%2c1555.918%2c5.438C1540.714%2c-19.079%2c1514.722%2c-35.195%2c1485.876%2c-34.746C1457.762%2c-34.308%2c1433.41%2c-16.881%2c1419.514%2c7.562C1405.789%2c31.703%2c1403.318%2c61.48%2c1417.646%2c85.269C1431.575%2c108.395%2c1458.899%2c116.717%2c1485.876%2c117.746' fill='rgba(255%2c 234%2c 0%2c 0.39)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1351.82 -18.48 a69.7 69.7 0 1 0 139.4 0 a69.7 69.7 0 1 0 -139.4 0z' fill='rgba(255%2c 234%2c 0%2c 0.39)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M101.325%2c869.285C144.637%2c868.767%2c176.565%2c834.759%2c199.329%2c797.908C223.722%2c758.42%2c243.862%2c712.43%2c224.188%2c670.391C201.828%2c622.611%2c153.968%2c585.082%2c101.325%2c588.493C52.346%2c591.667%2c24.579%2c640.497%2c3.258%2c684.706C-14.694%2c721.928%2c-20.216%2c763.809%2c-0.827%2c800.303C19.835%2c839.193%2c57.29%2c869.812%2c101.325%2c869.285' fill='rgba(255%2c 234%2c 0%2c 0.39)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M14.181%2c714.051C36.037%2c715.062%2c57.541%2c704.478%2c68.331%2c685.444C78.991%2c666.639%2c75.691%2c643.625%2c64.63%2c625.054C53.85%2c606.955%2c35.246%2c594.742%2c14.181%2c594.531C-7.247%2c594.317%2c-27.943%2c605.13%2c-38.045%2c624.028C-47.663%2c642.021%2c-42.175%2c663.16%2c-31.937%2c680.807C-21.745%2c698.376%2c-6.108%2c713.113%2c14.181%2c714.051' fill='rgba(255%2c 234%2c 0%2c 0.39)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-172.37 705.71 a238.08 238.08 0 1 0 476.16 0 a238.08 238.08 0 1 0 -476.16 0z' fill='rgba(255%2c 234%2c 0%2c 0.39)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1544.931%2c878.42C1591.219%2c877.975%2c1628.555%2c846.614%2c1653.405%2c807.559C1680.733%2c764.609%2c1703.658%2c712.058%2c1679.187%2c667.419C1654.088%2c621.635%2c1597.074%2c607%2c1544.931%2c609.687C1497.649%2c612.124%2c1455.836%2c638.827%2c1432.679%2c680.122C1410.039%2c720.494%2c1409.978%2c769.401%2c1432.78%2c809.682C1455.931%2c850.579%2c1497.938%2c878.872%2c1544.931%2c878.42' fill='rgba(255%2c 234%2c 0%2c 0.39)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1635.155%2c1054.228C1709.249%2c1055.731%2c1767.216%2c996.947%2c1802.648%2c931.857C1836.335%2c869.974%2c1845.406%2c795.11%2c1809.068%2c734.746C1773.708%2c676.007%2c1703.681%2c651.421%2c1635.155%2c653.62C1570.662%2c655.69%2c1511.708%2c689.374%2c1479.557%2c745.32C1447.52%2c801.068%2c1450.106%2c867.868%2c1479.031%2c925.293C1511.574%2c989.9%2c1562.83%2c1052.761%2c1635.155%2c1054.228' fill='rgba(255%2c 234%2c 0%2c 0.39)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1359.58 613.74 a54.16 54.16 0 1 0 108.32 0 a54.16 54.16 0 1 0 -108.32 0z' fill='rgba(255%2c 234%2c 0%2c 0.39)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1079'%3e%3crect width='1600' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #b-bg-anim {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1600' height='800' preserveAspectRatio='none' viewBox='0 0 1600 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1083%26quot%3b)' fill='none'%3e%3crect width='1600' height='800' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M-141.33 34.66 a175.99 175.99 0 1 0 351.98 0 a175.99 175.99 0 1 0 -351.98 0z' fill='rgba(2%2c 119%2c 189%2c 0.38823529411764707)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-153.7 47.03 a200.73 200.73 0 1 0 401.46 0 a200.73 200.73 0 1 0 -401.46 0z' fill='rgba(2%2c 119%2c 189%2c 0.38823529411764707)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M104.823%2c247.978C155.194%2c249.096%2c202.775%2c219.425%2c225.018%2c174.218C245.218%2c133.163%2c225.365%2c88.052%2c203.209%2c48.019C180.027%2c6.131%2c152.662%2c-41.11%2c104.823%2c-42.961C54.945%2c-44.891%2c15.5%2c-4.338%2c-7.698%2c39.859C-29.155%2c80.739%2c-28.434%2c128.468%2c-6.476%2c169.081C16.704%2c211.956%2c56.095%2c246.897%2c104.823%2c247.978' fill='rgba(2%2c 119%2c 189%2c 0.38823529411764707)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1557.343%2c250.341C1609.084%2c253.418%2c1664.102%2c238.805%2c1691.328%2c194.699C1719.691%2c148.751%2c1712.421%2c90.154%2c1684.904%2c43.695C1657.943%2c-1.825%2c1610.21%2c-33.511%2c1557.343%2c-31.516C1507.335%2c-29.629%2c1468.332%2c8.234%2c1445.436%2c52.733C1424.587%2c93.254%2c1425.926%2c140.598%2c1448.382%2c180.251C1471.191%2c220.527%2c1511.139%2c247.593%2c1557.343%2c250.341' fill='rgba(2%2c 119%2c 189%2c 0.38823529411764707)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1372.41 -39.08 a28.51 28.51 0 1 0 57.02 0 a28.51 28.51 0 1 0 -57.02 0z' fill='rgba(2%2c 119%2c 189%2c 0.38823529411764707)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1513.476%2c194.752C1555.537%2c195.588%2c1593.269%2c168.036%2c1612.099%2c130.416C1629.218%2c96.214%2c1617.898%2c57.352%2c1598.852%2c24.184C1579.706%2c-9.158%2c1551.899%2c-39.949%2c1513.476%2c-41.334C1473.026%2c-42.792%2c1436.181%2c-17.876%2c1416.727%2c17.618C1397.991%2c51.801%2c1402.733%2c92.414%2c1421.418%2c126.625C1441.031%2c162.534%2c1472.568%2c193.939%2c1513.476%2c194.752' fill='rgba(2%2c 119%2c 189%2c 0.38823529411764707)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M70.67%2c804.89C107.178%2c806.045%2c144.528%2c795.398%2c164.815%2c765.024C187.394%2c731.217%2c194.757%2c685.937%2c173.094%2c651.535C152.425%2c618.711%2c109.437%2c614.167%2c70.67%2c615.516C34.844%2c616.762%2c-1.98%2c627.333%2c-20.114%2c658.256C-38.426%2c689.483%2c-32.751%2c728.599%2c-13.695%2c759.378C4.333%2c788.496%2c36.44%2c803.807%2c70.67%2c804.89' fill='rgba(2%2c 119%2c 189%2c 0.38823529411764707)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-157.75 691.09 a208.84 208.84 0 1 0 417.68 0 a208.84 208.84 0 1 0 -417.68 0z' fill='rgba(2%2c 119%2c 189%2c 0.38823529411764707)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M187.636%2c1033.533C258.987%2c1031.044%2c318.704%2c985.745%2c354.923%2c924.22C391.76%2c861.644%2c406.789%2c784.95%2c371.249%2c721.628C335.062%2c657.154%2c261.548%2c628.024%2c187.636%2c626.166C109.801%2c624.209%2c27.762%2c645.451%2c-12.693%2c711.976C-54.452%2c780.647%2c-43.665%2c868.426%2c-1.167%2c936.642C38.923%2c1000.992%2c111.865%2c1036.176%2c187.636%2c1033.533' fill='rgba(2%2c 119%2c 189%2c 0.38823529411764707)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1523.233%2c852.813C1565.076%2c849.412%2c1588.555%2c809.423%2c1609.521%2c773.052C1630.451%2c736.744%2c1654.695%2c695.688%2c1635.195%2c658.592C1614.832%2c619.856%2c1566.994%2c609.131%2c1523.233%2c608.907C1478.981%2c608.68%2c1432.985%2c620.075%2c1409.268%2c657.436C1384.004%2c697.233%2c1384.917%2c748.66%2c1408.668%2c789.378C1432.241%2c829.791%2c1476.601%2c856.603%2c1523.233%2c852.813' fill='rgba(2%2c 119%2c 189%2c 0.38823529411764707)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1292.5 680.84 a188.34 188.34 0 1 0 376.68 0 a188.34 188.34 0 1 0 -376.68 0z' fill='rgba(2%2c 119%2c 189%2c 0.38823529411764707)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1348.69 624.65 a75.96 75.96 0 1 0 151.92 0 a75.96 75.96 0 1 0 -151.92 0z' fill='rgba(2%2c 119%2c 189%2c 0.38823529411764707)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1083'%3e%3crect width='1600' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .shape-bg {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1455%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3crect width='213.6' height='213.6' clip-path='url(%26quot%3b%23SvgjsClipPath1456%26quot%3b)' x='215.91' y='274.05' fill='url(%26quot%3b%23SvgjsPattern1457%26quot%3b)' transform='rotate(319.02%2c 322.71%2c 380.85)'%3e%3c/rect%3e%3crect width='336' height='336' clip-path='url(%26quot%3b%23SvgjsClipPath1458%26quot%3b)' x='150.57' y='358.28' fill='url(%26quot%3b%23SvgjsPattern1459%26quot%3b)' transform='rotate(284.32%2c 318.57%2c 526.28)'%3e%3c/rect%3e%3ccircle r='90.58773545714064' cx='550.55' cy='260.96' stroke='rgba(255%2c 234%2c 0%2c 1)' stroke-width='2.79' stroke-dasharray='3%2c 3'%3e%3c/circle%3e%3cpath d='M579.49 271.14L580.59 258.38 593.28 256.65 594.38 243.89 607.07 242.17 608.17 229.41 620.86 227.68' stroke='rgba(255%2c 234%2c 0%2c 1)' stroke-width='1.62' stroke-dasharray='4%2c 4'%3e%3c/path%3e%3cpath d='M931.27 347.91L938.43 337.29 950.36 341.95 957.52 331.33 969.45 335.98 976.61 325.37 988.54 330.02M933.66 355.55L940.82 344.93 952.75 349.58 959.91 338.97 971.84 343.62 979 333 990.93 337.66' stroke='rgba(244%2c 67%2c 54%2c 1)' stroke-width='1.63' stroke-dasharray='3%2c 2'%3e%3c/path%3e%3cpath d='M993.23 117.84 L907.14 166.58999999999997L998.517799040826 190.54779904082613z' stroke='rgba(2%2c 119%2c 189%2c 1)' stroke-width='2.42' stroke-dasharray='3%2c 3'%3e%3c/path%3e%3ccircle r='66.5126594244899' cx='141.85' cy='452.87' stroke='rgba(244%2c 67%2c 54%2c 1)' stroke-width='1'%3e%3c/circle%3e%3crect width='95' height='95' clip-path='url(%26quot%3b%23SvgjsClipPath1460%26quot%3b)' x='1190.16' y='112.99' fill='url(%26quot%3b%23SvgjsPattern1461%26quot%3b)' transform='rotate(189.54%2c 1237.66%2c 160.49)'%3e%3c/rect%3e%3cpath d='M1021.49 7.93a5.6 5.6 0 1 0-10.69-3.37 5.6 5.6 0 1 0 10.69 3.37zM1006.23 3.11a5.6 5.6 0 1 0-10.68-3.37 5.6 5.6 0 1 0 10.68 3.37zM990.97-1.7a5.6 5.6 0 1 0-10.68-3.37 5.6 5.6 0 1 0 10.68 3.37zM975.71-6.52a5.6 5.6 0 1 0-10.68-3.37 5.6 5.6 0 1 0 10.68 3.37zM1056.82 2.29a5.6 5.6 0 1 0-10.68-3.37 5.6 5.6 0 1 0 10.68 3.37zM1041.56-2.52a5.6 5.6 0 1 0-10.68-3.37 5.6 5.6 0 1 0 10.68 3.37zM1026.3-7.33a5.6 5.6 0 1 0-10.68-3.37 5.6 5.6 0 1 0 10.68 3.37zM1011.04-12.15a5.6 5.6 0 1 0-10.68-3.37 5.6 5.6 0 1 0 10.68 3.37z' fill='rgba(255%2c 234%2c 0%2c 1)'%3e%3c/path%3e%3crect width='274.12' height='274.12' clip-path='url(%26quot%3b%23SvgjsClipPath1462%26quot%3b)' x='1252.45' y='183.11' fill='url(%26quot%3b%23SvgjsPattern1463%26quot%3b)' transform='rotate(149.36%2c 1389.51%2c 320.17)'%3e%3c/rect%3e%3cpath d='M95.24 439.02L89.82 450.63 77.31 447.89 71.9 459.5 59.39 456.76 53.97 468.36 41.46 465.63M91.69 431.85L86.28 443.46 73.77 440.72 68.35 452.33 55.84 449.59 50.42 461.19 37.91 458.46M88.15 424.68L82.73 436.29 70.22 433.55 64.8 445.16 52.29 442.42 46.88 454.02 34.37 451.29' stroke='rgba(2%2c 119%2c 189%2c 1)' stroke-width='1.93'%3e%3c/path%3e%3cpath d='M347.55 72.21L341.87 60.73 351.81 52.66 346.12 41.19 356.07 33.12 350.38 21.65 360.33 13.58M355.37 73.91L349.68 62.43 359.63 54.37 353.94 42.89 363.89 34.83 358.2 23.35 368.14 15.28' stroke='rgba(255%2c 234%2c 0%2c 1)' stroke-width='2.54'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1455'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpattern x='0' y='0' width='7.12' height='7.12' patternUnits='userSpaceOnUse' id='SvgjsPattern1457'%3e%3cpath d='M0 7.12L3.56 0L7.12 7.12' stroke='rgba(2%2c 119%2c 189%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1456'%3e%3ccircle r='53.4' cx='322.71' cy='380.85'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1459'%3e%3cpath d='M0 6L3 0L6 6' stroke='rgba(244%2c 67%2c 54%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1458'%3e%3ccircle r='84' cx='318.57' cy='526.28'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='9.5' height='9.5' patternUnits='userSpaceOnUse' id='SvgjsPattern1461'%3e%3cpath d='M0 9.5L4.75 0L9.5 9.5' stroke='rgba(255%2c 234%2c 0%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1460'%3e%3ccircle r='23.75' cx='1237.66' cy='160.49'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='12.46' height='12.46' patternUnits='userSpaceOnUse' id='SvgjsPattern1463'%3e%3cpath d='M6.23 1L6.23 11.46M1 6.23L11.46 6.23' stroke='rgba(2%2c 119%2c 189%2c 1)' fill='none' stroke-width='2.56'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1462'%3e%3ccircle r='68.53' cx='1389.51' cy='320.17'%3e%3c/circle%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #bg-1 {
+            background-image: url(speed-400-my24-family-multi-content-2-1920x1080.avif);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #bg-2 {
+            background-image: url(hunter2.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #bg-3 {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0) 70%, rgba(17, 116, 0, 0.5) 70%);
+        }
+
+        #bg-4 {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0) 70%, rgba(0, 0, 0, 0.25) 70%);
+        }
+
+        ul.lead li {
+            list-style-type: "👉";
+            padding: 5px 10px;
+        }
+
+        .white-text-shadow {
+            text-shadow: 5px 5px 5px #000;
+        }
+
+        .color-box {
+            width: 38px;
+            height: 38px;
+        }
+
+        .card-head-bg {
+            background-image: url(res/royal-enfield-bg.png);
+            background-size: contain;
+            background-position: top right;
+            background-repeat: no-repeat;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="bg-1">
+        <div id="bg-3">
+            <div id="bg-4">
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                        <!-- <a class="navbar-brand" href="#">
+                    <img src="https://img.freepik.com/free-vector/law-office_497289-40.jpg?w=740" alt="" width="30" height="24">
+                </a> -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="enfield.html">Aboutus</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="service.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-12"></div>
+                        <div class="col-md-4 col-12">
+                            <div class="my-5 py-5">
+                                <h2 class="lead text-white text-end">
+                                    <span class="fw-bold display-4">Triumph Speed </span>
+                                    <span class="display-3">400 </span><br />
+                                </h2>
+                                <h3 class="lead text-white text-end my-3">
+                                    <span class="display-3 mt-5">2.33 </span>
+                                    <span class="fs-2 mb-5">Lakh </span>
+                                </h3>
+                                <p class="lead text-white text-end fw-bold fs-3 mb-5">Avg. Ex-Showroom price</p>
+                                <p class="text-end">
+                                    <a href="contact.html" class="btn btn-danger rounded-pill shadow-none px-5">Emi
+                                        Calculator</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="shape-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-12">
+                    <div class="card border-0 my-5">
+                        <div class="card-body">
+                            <h2 class="lead fs-2 mb-3">The Yamaha MT-15 V2: A Rider's Dream Come True</h2>
+                            <p class="lead fs-6">If you're a motorcycle enthusiast in India, the Yamaha MT-15 is a name
+                                that needs no introduction. This beast on two wheels has gained a loyal fan following
+                                for its powerful performance, striking design, and the promise of an exhilarating ride.
+                                In this article, we will delve into the world of Yamaha MT-15, exploring its price
+                                range, on-road costs, various versions, and crucial details like mileage. So, gear up
+                                and let's hit the road! The Yamaha MT-15, also known as the 'Master of Torque,' made its
+                                debut in the Indian market a few years ago. It is a streetfighter motorcycle that's
+                                designed to provide an unmatched riding experience, blending style and substance
+                                seamlessly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card border-0 my-5">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush lead text-end fs-6 py-4" style="width: 300px;">
+                                <li class="list-group-item border-0">Engine - 373.3 cc</li>
+                                <li class="list-group-item border-0">Gearbox - 6 Speed</li>
+                                <li class="list-group-item border-0">Mileage - Avg 30 / Kmpl</li>
+                                <li class="list-group-item border-0">Sit Height - 800 Mm</li>
+                                <li class="list-group-item border-0">Fuel Capacity - 13 Liters</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-12">
+                    <div class="card bg-light border-0 my-5">
+                        <div class="card-body">
+                            <h2 class="lead fs-2">Evolution of MT-15</h2>
+                            <p class="lead fs-6">Yamaha didn't stop with just one version of the MT-15. They listened to
+                                rider feedback and introduced subsequent versions to enhance the biking experience.
+                                Let's take a look:
+
+                                Yamaha MT-15 V2 (H3)
+                                The second version of the MT-15 brought some significant improvements, including better
+                                styling, enhanced features, and improved performance. With a refreshed look, it aimed to
+                                cater to the evolving tastes of the market.
+
+                                Yamaha MT-15 V3 (H3)
+                                As of now, Yamaha has hinted at a third version of the MT-15. However, the details are
+                                still under wraps, leaving fans eagerly awaiting what this new iteration will bring to
+                                the table.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card border-0 ">
+                        <div class="card-body">
+                            <img src="speed 400_1.avif" height="250" class="d-block mx-auto" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shape-bg py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img class="float-end p-3" src="res/icons8-engine-94.png" alt="">
+                            <h2 class="lead fs-3 text-center">Powerhouse Performance</h2>
+                            <hr class="w-50">
+                            <p class="lead fs-6">At the heart of the Yamaha MT-15 V2 beats a 155cc, liquid-cooled,
+                                4-valve, SOHC engine that redefines performance in its class. This potent powerplant
+                                delivers a thrilling 19.3 bhp of power and 14.7 Nm of torque, ensuring brisk
+                                acceleration and a top speed that sets it apart from its competitors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img class="float-end p-4" src="res/icons8-tyre-94.png" alt="">
+                            <h2 class="lead fs-3 text-center">Dynamic Chassis</h2>
+                            <hr class="w-50">
+                            <p class="lead fs-6">The MT-15 V2 features a lightweight and agile chassis that allows for
+                                precise handling and effortless maneuverability. Whether you're slicing through city
+                                traffic or carving through mountain curves, this motorcycle offers an exhilarating
+                                riding experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img class="float-end p-4" src="res/icons8-bluetooth-94.png" alt="">
+                            <h2 class="lead fs-3 text-center">Suspension and Braking</h2>
+                            <hr class="w-50">
+                            <p class="lead fs-6">Equipped with a telescopic front fork and a monoshock rear suspension,
+                                the MT-15 V2 absorbs bumps and undulations with finesse. The front and rear disc brakes
+                                provide confidence-inspiring stopping power, ensuring safety at every turn.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img class="float-end p-4" src="res/icons8-engine-94.png" alt="">
+                            <h2 class="lead fs-3 text-center">Agile Handling</h2>
+                            <hr class="w-50">
+                            <p class="lead fs-6">The MT-15 is renowned for its nimble and agile handling. It features a
+                                delta-box frame and premium suspension components that offer superior stability and
+                                cornering prowess. Whether you're navigating city streets or conquering winding roads,
+                                the MT-15 handles with precision.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bg-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card bg-transparent border-0 my-5 py-5">
+                        <div class="card-body text-center text-white white-text-shadow">
+                            <h2 class="fw-bold">
+                                <span class="fw-bold display-4">Trumph Speed 400 </span><br>
+                                <span class="h5">has the following </span><br>
+                                <span>specifications</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shape-bg py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <div class="card my-4">
+                        <div class="card-body">
+                            <p class="lead fs-5 text-center"><strong>Engine:</strong>
+                            <ul class="lead fs-6">
+                                <li> Type: Single-cylinder, 4-stroke, air-cooled</li>
+                                <li> Displacement: 349cc</li>
+                                <li> Maximum Power: 19.1 bhp at 5,250 rpm</li>
+                                <li> Maximum Torque: 28 Nm at 4,000 rpm</li>
+                                <li> Transmission: 5-speed constant mesh</li>
+                                <li> Fuel System: Electronic Fuel Injection (EFI)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <p class="lead fs-5 text-center"><strong> Dimensions:</strong>
+                            <ul class="lead fs-6">
+                                <li>Length: 2,160 mm</li>
+                                <li> Width: 790 mm</li>
+                                <li> Height: 1,090 mm</li>
+                                <li>Ground Clearance: 135 mm</li>
+                                <li>Seat Height: 800 mm</li>
+                                <li> Kerb Weight: 195 kg</li>
+                                <li>Top Speed: 120 km/h</li>
+                                <li>0-60 km/h: 3.9 seconds</li>
+                                <li>Mileage: 30-35 km/l</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card my-4">
+                        <div class="card-body">
+                            <p class="lead fs-5 text-center"><strong> Chassis:</strong>
+                            <ul class="lead fs-6">
+                                <li> Frame: Single downtube, using the engine as a stressed member</li>
+                                <li> Suspension: Telescopic front forks, twin gas-charged shock absorbers at the rear
+                                </li>
+                                <li> Brakes: Front and rear disc brakes with dual-channel ABS</li>
+                                <li> Wheels: 19-inch front and 18-inch rear spoke wheels</li>
+                                <li> Fuel Tank Capacity: 13.7 liters</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid my-5">
+            <div class="col-12">
+                <p class="text-center lead fs-1 mt-5">Available Colors</p>
+                <nav class="nav justify-content-center mb-5">
+                    <a class="nav-link" href="#">
+                        <div class="color-box rounded-circle shadow-sm" style="background-color: #F44336;"></div>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="color-box rounded-circle shadow-sm" style="background-color: #0277BD;"></div>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="color-box rounded-circle shadow-sm" style="background-color: #FAFAFA;"></div>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="color-box rounded-circle shadow-sm" style="background-color: #212121;"></div>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="color-box rounded-circle shadow-sm" style="background-color: #FFEA00;"></div>
+                    </a>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-12 px-0">
+                    <div class="card border-0 px-0">
+                        <div class="card-body px-0">
+                            <img class="img-fluid" src="street-400-fb6.jpeg" alt="" width="500" height="500">
+                            <p class="lead text-center fw-bold fs-4 mt-3">Triumph Speed 400</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 px-0">
+                    <div class="card border-0 px-0">
+                        <div class="card-body px-0">
+                            <img class="img-fluid" src="street-400-fb4.jpeg" alt="" width="500" height="500">
+                            <p class="lead text-center fw-bold fs-4 mt-3">Triumph Speed 400</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 px-0">
+                    <div class="card  border-0 px-0">
+                        <div class="card-body px-0">
+                            <img class="img-fluid" src="street-400-fb6.jpeg" alt="" width="500" height="500">
+                            <p class="lead text-center fw-bold fs-4 my-3">Triumph Speed 400</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 px-0">
+                    <div class="card  border-0 px-0">
+                        <div class="card-body px-0">
+                            <img class="img-fluid" src="street-400-fb4.jpeg" alt="" width="500" height="500">
+                            <p class="lead text-center fw-bold fs-4 my-3">Triumph Speed 400</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shape-bg py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img class="float-end" width="100" src="res/Motocross-rafiki.png" alt="">
+                            <h2 class="lead fs-2 text-center">The Yamaha MT-15: Your Riding Companion</h2>
+                            <p class="lead fs-6 text-center">The Yamaha MT-15 is more than just a motorcycle; it's a
+                                riding
+                                companion that offers an unparalleled combination of style, performance, and technology.
+                                Whether you're a seasoned rider or a novice, this bike caters to all, ensuring every
+                                ride is a thrilling adventure.
+                                Don't miss the opportunity to experience the Yamaha MT-15 for yourself. It's time to
+                                elevate your riding experience to new heights with this exceptional machine. Ride with
+                                power, style, and confidence on the Yamaha MT-15.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="lead fs-5 text-center fw-bold mb-3">Performance Redefined</h2>
+                            <p class="lead fs-6"><span class="fw-bold">Power and Torque : </span>The Yamaha MT-15
+                                produces a maximum power output of 18.5 kW (25.5 PS) at 10,000 RPM and a peak torque of
+                                14.7 Nm at 8,500 RPM. This ensures exhilarating acceleration and an impressive top
+                                speed, making it ideal for both urban commutes and spirited rides on highways.</p>
+                            <p class="lead fs-6"><span class="fw-bold">VVA Technology : </span>Yamaha's Variable Valve
+                                Actuation technology optimizes valve timing to provide strong low-end torque and
+                                high-end power. This innovative feature enhances fuel efficiency and delivers a
+                                thrilling riding experience across a wide range of conditions.</p>
+                            <p class="lead fs-6"><span class="fw-bold">Smooth Gearshifts : </span>The MT-15 comes
+                                equipped with a 6-speed transmission that offers precise and smooth gearshifts. Whether
+                                you're cruising at a leisurely pace or pushing the bike to its limits, the gearbox
+                                ensures seamless transitions between gears.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="lead fs-5 text-center fw-bold mb-3">Cutting-Edge Technology</h2>
+                            <p class="lead fs-6"><span class="fw-bold">Full-Color TFT Display : </span>Stay informed
+                                while on the road with the MT-15's full-color TFT display. It provides essential
+                                information such as speed, gear position, fuel level, and more in a clear and intuitive
+                                layout.
+                            </p>
+                            <p class="lead fs-6"><span class="fw-bold">Dual-Channel ABS : </span> Safety is a top
+                                priority, and the MT-15 doesn't disappoint. It features dual-channel ABS (Anti-lock
+                                Braking System) that ensures confident braking performance, even in challenging road
+                                conditions.
+                            </p>
+                            <p class="lead fs-6"><span class="fw-bold">Upside-Down Front Forks : </span>The bike's
+                                upside-down front forks offer superior suspension performance, soaking up bumps and
+                                undulations to provide a smooth and comfortable ride.</p>
+                            <p class="lead fs-6"><span class="fw-bold">Rider-Focused Ergonomics : </span>Yamaha has paid
+                                meticulous attention to rider comfort. The MT-15's well-crafted ergonomics provide a
+                                relaxed riding posture, making it suitable for both short commutes and long journeys.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shape-bg">
+        <div class="container my-5">
+            <div class="col-12">
+                <h3 class="lead fs-2 my-5">Similar bike you can check</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top" src="hunter1.jpg">
+                        <div class="card-body">
+                            <p class="lead text-center fs-4"><strong>Hunter</strong> <span class="fs-2">350</span></p>
+                            <div class="row my-3">
+                                <div class="col">Max BHp <strong>20.2</strong></div>
+                                <div class="col">Max torque <strong>27</strong> Nm</div>
+                            </div>
+                            <p class="text-center fs-5 mb-0">Cubic Capacity <strong>350cc</strong></p>
+                            <p class="text-center fs-5"><strong>1.99L</strong> Ex-showroom</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top" src="trymp1.jpeg">
+                        <div class="card-body">
+                            <p class="lead text-center fs-4"><strong>Triumph</strong> speed <span
+                                    class="fs-2">400</span></p>
+                            <div class="row my-3">
+                                <div class="col">Max BHp <strong>20.2</strong></div>
+                                <div class="col">Max torque <strong>27</strong> Nm</div>
+                            </div>
+                            <p class="text-center fs-5 mb-0">Cubic Capacity <strong>350cc</strong></p>
+                            <p class="text-center fs-5"><strong>1.99L</strong> Ex-showroom</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top" src="harley2.jpeg">
+                        <div class="card-body">
+                            <p class="lead text-center fs-4"><strong>Harley</strong> Davidson <span
+                                    class="fs-2">x440</span></p>
+                            <div class="row my-3">
+                                <div class="col">Max BHp <strong>20.2</strong></div>
+                                <div class="col">Max torque <strong>27</strong> Nm</div>
+                            </div>
+                            <p class="text-center fs-5 mb-0">Cubic Capacity <strong>350cc</strong></p>
+                            <p class="text-center fs-5"><strong>1.99L</strong> Ex-showroom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shape-bg my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center lead fs-1 mt-5">Owning the Yamaha MT-15: Why It's the Right Choice</p>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+
+                            <p class="lead fs-5 text-center"><strong>Unmatched Versatility
+                                </strong></p>
+                            <hr class="w-100">
+                            <p class="lead fs-6">The Yamaha MT-15's versatility is one of its defining characteristics.
+                                Whether you're commuting through congested city streets or embarking on long-distance
+                                adventures, this bike adapts effortlessly. The precise throttle response and exceptional
+                                maneuverability make weaving through traffic a breeze, while its powerful engine ensures
+                                highway cruising is a thrilling experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="lead fs-5 text-center"><strong>Fuel Efficiency
+                                </strong>
+                            </p>
+                            </p>
+                            <hr class="w-100">
+                            <p class="lead fs-6">In an era where fuel efficiency is crucial, the MT-15 doesn't
+                                disappoint. Thanks to Yamaha's engineering prowess and the VVA technology, this bike
+                                offers impressive mileage without compromising on performance. You'll find yourself
+                                making fewer stops at the pump and more time enjoying the open road.
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="lead fs-5 text-center"><strong>LED Lighting</strong>
+                            </p>
+                            </p>
+                            <hr class="w-100">
+                            <p class="lead fs-6">The MT-15's advanced LED lighting system not only enhances its striking
+                                aesthetics but also provides superior visibility during night rides. The bright and
+                                focused illumination ensures you're always aware of your surroundings, enhancing safety
+                                on the road.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="lead fs-5 text-center"><strong>Dual-Channel ABS</strong>
+                            </p>
+                            </p>
+                            <hr class="w-100">
+                            <p class="lead fs-6">We can't stress enough how vital safety is when riding a motorcycle.
+                                Yamaha has equipped the MT-15 with a dual-channel ABS system that prevents wheel lock-up
+                                during sudden braking, reducing the risk of accidents and ensuring you remain in
+                                control, even in emergency situations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="h3 mb-4"> FAQs</h3>
+                    <h3 class="h4 mb-4">
+                        What is the top speed of the Royal Enfield Classic 350? </h3>
+                    <p class="lead fs-5">
+                        he Classic 350 can reach a top speed of 120 km/h.</p>
+                    <h3 class="h4 mb-4">
+                        Does the Classic 350 come with ABS?</h3>
+                    <p class="lead fs-5">
+                        Yes, the Classic 350 is equipped with dual-channel ABS..</p>
+                    <h3 class="h4 mb-4">
+                        Is the Classic 350 suitable for long rides? </h3>
+                    <p class="lead fs-5">
+                        Absolutely! The comfortable seating and upright riding posture make it ideal for long journeys.
+                    </p>
+                    <h3 class="h4 mb-4">
+                        What is the fuel efficiency of the Classic 350?</h3>
+                    <p class="lead fs-5">
+                        The Classic 350 typically offers a mileage of 30-35 km/l, depending on riding conditions.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center text-white pt-3">All Rights Reserved © 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
