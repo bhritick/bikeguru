@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,6 +67,11 @@
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
+        }
+
+        .bg-duo {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0) 50%);
         }
 
         /* #bg-3 {
@@ -145,6 +151,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
@@ -175,36 +182,13 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <div id="bg-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-12"></div>
-                <div class="col-md-4 col-12">
-                    <div class="my-5 py-5">
-                        <h1 class="lead text-white text-end">
-                            <span class="fw-bold display-6">Tvs Bikes Price, Models, Specification,
-                                by</span>
-                            <span class="display-3">
-                                Wheelguru </span><br />
-                        </h1>
-                        <p class="text-end my-5">
-                            <a href="contact-us" class="btn btn-danger rounded-pill shadow-none px-5">Emi
-                                Calculator</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section class="shape-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-12">
                     <div class="card border-0 my-5">
                         <div class="card-body">
-                            <h2 class="lead fs-2 mb-4">Unlocking the World of TVS Motorcycles: A Comprehensive Guide
-                            </h2>
+                            <h1 class="lead fs-2 mb-4">Unlocking the World of TVS Motorcycles: A Comprehensive Guide
+                            </h1>
                             <p class="lead fs-6">In the dynamic landscape of the two-wheeler industry, TVS Bike Company
                                 has emerged as a trailblazer, consistently setting new benchmarks for performance,
                                 innovation, and customer satisfaction. With a legacy spanning decades, TVS has etched
@@ -220,7 +204,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-12">
-                    <div class="card border-0 my-5">
+                    <div class="card border-0 mb-5">
                         <div class="card-body">
                             <ul class="list-group list-group-flush lead text-end fs-5 my-4" style="width: 300px;">
                                 <!-- <a class="streched-link" href="ktm.html">
@@ -248,11 +232,56 @@
                                     <li class="list-group-item border-0"> <strong>Tvs RTR</strong></li>
                                 </a>
                             </ul>
+                            <img src="res/brand-logo/tvs-logo.jpg" class="rounded float-end pe-4" width="132"
+                                height="74" alt="TVS Bike Logo" title="TVS Bike Logo" loading="lazy">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </header>
+    <section class="shape-bg">
+        <div class="container-fluid" id="bg-2">
+            <div class="row">
+                <div class="col-md-8 col-12"></div>
+                <div class="col-md-4 col-12">
+                    <div class="card anime-card-bg border-0 my-5" style="width: 20rem;">
+                        <div class="card-body p-5">
+                            <h2 class="lead text-danger fw-bold display-6">TVS</h2>
+                            <hr class="w-25 my-4">
+                            <ul class="list-group lead mb-5">
+                                <li class="list-group-item bg-transparent border-0 p-0"><span
+                                        class="bg-warning rounded fs-4">🔖</span> Bike's Price </li>
+                                <li class="list-group-item bg-transparent border-0 p-0"><span
+                                        class="bg-warning rounded fs-4">🏍️</span> Models
+                                </li>
+                                <li class="list-group-item bg-transparent border-0 p-0"><span
+                                        class="bg-warning rounded fs-4">📦</span> Specifications</li>
+                            </ul>
+                            <div class="">
+                                <a href="contact-us"
+                                    class="btn btn-outline-danger rounded shadow-none px-4 py-2">Explore
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="my-5 py-5">
+                        <h1 class="lead text-white text-end">
+                            <span class="fw-bold display-6">Tvs Bikes Price, Models, Specification,
+                                by</span>
+                            <span class="display-3">
+                                Wheelguru </span><br />
+                        </h1>
+                        <p class="text-end my-5">
+                            <a href="contact-us" class="btn btn-danger rounded-pill shadow-none px-5">Emi
+                                Calculator</a>
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-12">
@@ -305,14 +334,16 @@
                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="res/bike-image/Royal-Enfield-Meteor-350-Black.webp" class="d-block w-100" alt="...">
+                                <img src="res/bike-image/Royal-Enfield-Meteor-350-Black.webp" class="d-block w-100"
+                                    alt="...">
                                 <div class="carousel-caption d-none d-md-block text-white">
                                     <p class="lead fw-bold fs-2">Meteor-350</p>
                                     <p class="lead fs-3">349cc | 20.2 BHp</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="res/bike-image/Royal-Enfield-Meteor-350-Blue.webp" class="d-block w-100" alt="...">
+                                <img src="res/bike-image/Royal-Enfield-Meteor-350-Blue.webp" class="d-block w-100"
+                                    alt="...">
                                 <div class="carousel-caption d-none d-md-block text-white">
                                     <p class="lead fw-bold fs-2">Meteor-350</p>
                                     <p class="lead fs-3">27Nm Torque @ 4000rpm</p>
@@ -339,14 +370,16 @@
                                 </div>
                             </div> -->
                             <div class="carousel-item active">
-                                <img src="res/bike-image/Royal-Enfield-GT-650-Silver.webp" class="d-block w-100" alt="...">
+                                <img src="res/bike-image/Royal-Enfield-GT-650-Silver.webp" class="d-block w-100"
+                                    alt="...">
                                 <div class="carousel-caption d-none d-md-block text-white">
                                     <p class="lead fw-bold fs-2">GT-650</p>
                                     <p class="lead fs-3">52Nm Torque @ 5250rpm</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="res/bike-image/Royal-Enfield-GT-650-White.webp" class="d-block w-100" alt="...">
+                                <img src="res/bike-image/Royal-Enfield-GT-650-White.webp" class="d-block w-100"
+                                    alt="...">
                                 <div class="carousel-caption d-none d-md-block text-white">
                                     <p class="lead fw-bold fs-2">GT-650</p>
                                     <p class="lead fs-3">Parallel-Twin Engine</p>
@@ -359,7 +392,8 @@
                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="res/bike-image/Royal-Enfield-Himalayan-411-Black.webp" class="d-block w-100" alt="...">
+                                <img src="res/bike-image/Royal-Enfield-Himalayan-411-Black.webp" class="d-block w-100"
+                                    alt="...">
                                 <div class="carousel-caption d-none d-md-block text-white">
                                     <p class="lead fw-bold fs-2">Himalayan-411</p>
                                     <p class="lead fs-3">411cc | 24.3 BHp</p>
@@ -373,7 +407,8 @@
                                 </div>
                             </div> -->
                             <div class="carousel-item">
-                                <img src="res/bike-image/Royal-Enfield-Himalayan-411.webp" class="d-block w-100" alt="...">
+                                <img src="res/bike-image/Royal-Enfield-Himalayan-411.webp" class="d-block w-100"
+                                    alt="...">
                                 <div class="carousel-caption d-none d-md-block text-white">
                                     <p class="lead fw-bold fs-2">Himalayan-411</p>
                                     <p class="lead fs-3">Single-Cylinder Engine</p>
@@ -386,21 +421,24 @@
                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="res/bike-image/Royal-Enfield-Hunter-350-Black.webp" class="d-block w-100" alt="...">
+                                <img src="res/bike-image/Royal-Enfield-Hunter-350-Black.webp" class="d-block w-100"
+                                    alt="...">
                                 <div class="carousel-caption d-none d-md-block text-white">
                                     <p class="lead fw-bold fs-2">Classic-350</p>
                                     <p class="lead fs-3">349cc | 19.8 BHp</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="res/bike-image/Royal-Enfield-Hunter-350-Red.webp" class="d-block w-100" alt="...">
+                                <img src="res/bike-image/Royal-Enfield-Hunter-350-Red.webp" class="d-block w-100"
+                                    alt="...">
                                 <div class="carousel-caption d-none d-md-block text-white">
                                     <p class="lead fw-bold fs-2">Classic-350</p>
                                     <p class="lead fs-3">28Nm Torque @ 4000rpm</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="res/bike-image/Royal-Enfield-Hunter-350-White.webp" class="d-block w-100" alt="...">
+                                <img src="res/bike-image/Royal-Enfield-Hunter-350-White.webp" class="d-block w-100"
+                                    alt="...">
                                 <div class="carousel-caption d-none d-md-block text-white">
                                     <p class="lead fw-bold fs-2">Classic-350</p>
                                     <p class="lead fs-3">Single-Cylinder Engine</p>
@@ -990,4 +1028,5 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
