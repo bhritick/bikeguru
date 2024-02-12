@@ -104,9 +104,10 @@
 
         #bg-2 {
             background-image: url("res/bike-image/tvs-raider-125-banner.webp");
-            background-position: center;
-            background-size: cover;
+            background-position: right;
+            background-size: contain;
             background-attachment: fixed;
+            background-repeat: no-repeat;
         }
 
         #bg-3 {
@@ -233,14 +234,18 @@
                 <div class="col-md-4 col-12">
                     <div class="card border-0 my-5">
                         <div class="card-body">
-                            <ul class="list-group list-group-flush lead border-end text-end fs-6" style="width: 20rem;">
-                                <li class="list-group-item border-0">Engine - <span class="fs-4">124.8cc</span></li>
-                                <li class="list-group-item border-0">Gearbox - <span class="fs-4">5</span> Speed</li>
-                                <li class="list-group-item border-0">Mileage - Avg <span class="fs-4">57</span> / Kmpl
-                                </li>
-                                <li class="list-group-item border-0">Sit Height - <span class="fs-4">780</span> Mm</li>
-                                <li class="list-group-item border-0">Fuel Capacity - <span class="fs-4">10</span> Liters
-                                </li>
+                            <ul class="list-group list-group-flush lead border-end border-danger text-end fs-6"
+                                style="width: 20rem;">
+                                <li class="list-group-item border-0 pe-5">Engine - <span
+                                        class="text-danger fw-bold fs-4">124.8</span>cc</li>
+                                <li class="list-group-item border-0 pe-5">Gearbox - <span
+                                        class="text-danger fw-bold fs-4">5</span> Speed</li>
+                                <li class="list-group-item border-0 pe-5">Mileage - Avg <span
+                                        class="text-danger fw-bold fs-4">57</span> / Kmpl</li>
+                                <li class="list-group-item border-0 pe-5">Sit Height - <span
+                                        class="text-danger fw-bold fs-4">780</span> Mm</li>
+                                <li class="list-group-item border-0 pe-5">Fuel Capacity - <span
+                                        class="text-danger fw-bold fs-4">10</span> Liters</li>
                             </ul>
                         </div>
                     </div>
@@ -281,16 +286,15 @@
                             <div class="card-body p-5">
                                 <h2 class="lead">
                                     <span class="d-block fw-bold fs-3 pb-3">TVS Raider 125</span>
-                                    <span class="d-block fs-4 py-1">Price</span>
-                                    <span class="d-block fs-4 py-1"> Models</span>
-                                    <span class="d-block fs-4 py-1"> Specification</span>
-                                    <span class="text-center d-block py-3"> by</span>
-                                    <span class="d-block fs-1"> Wheelguru</span>
+                                    <span class="d-block fs-4 py-1">Price, </span>
+                                    <span class="d-block fs-4 py-1">Models, </span>
+                                    <span class="d-block fs-4 py-1">Specification </span>
+                                    <span class="d-block py-3">by </span>
+                                    <span class="d-block fs-2">Wheelguru</span>
                                 </h2>
-                                <p class="text-center mt-4">
-                                    <a href="contact-us" class="btn btn-outline-danger rounded shadow-none px-5">Emi
-                                        Calculator</a>
-                                </p>
+                                <a href="contact-us" class="btn btn-outline-danger rounded shadow-none mt-3 px-5">Emi
+                                    Calculator</a>
+                                <!-- <p class="text-center mt-4"></p> -->
                             </div>
                         </div>
                     </div>
@@ -305,8 +309,8 @@
                 <div class="col-md-6 col-12">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <img class="float-end p-4" src="res/3d/icons8-tyre-94.png" alt="">
-                            <p class="lead fs-5"><strong>TVS Raider On-Road Price</strong></p>
+                            <img class="float-end p-3" src="res/3d/icons8-tyre-94.png" alt="">
+                            <h3 class="lead fs-5 mt-3"><strong>TVS Raider On-Road Price</strong></h3>
                             <hr class="w-50 my-4">
                             <p class="lead fs-6">One of the first questions that come to mind when considering a
                                 motorcycle purchase is its on-road price. The TVS Raider and Raider 125 offer excellent
@@ -320,8 +324,7 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <img class="float-end p-3" src="res/3d/icons8-money-bag-rupee-96.png" alt="">
-                            <p class="lead fs-5"><strong>TVS Raider Price Range
-                                </strong></p>
+                            <h3 class="lead fs-5 mt-3"><strong>TVS Raider Price Range</strong></h3>
                             <hr class="w-50 my-4">
                             <p class="lead fs-6">The TVS Raider series is known for its affordability. It competes
                                 effectively in the market by providing competitive prices without compromising on
@@ -335,8 +338,7 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <img class="float-end p-3" src="res/3d/icons8-fuel-94.png" alt="TVS Raider Mileage" />
-                            <p class="lead fs-5"><strong>TVS Raider Mileage
-                                </strong></p>
+                            <h3 class="lead fs-5 mt-3"><strong>TVS Raider Mileage</strong></h3>
                             <hr class="w-50 my-4">
                             <p class="lead fs-6">For many riders, mileage is a critical factor when choosing a
                                 motorcycle. The TVS Raider and Raider 125 offer impressive mileage, thanks to their
@@ -349,9 +351,8 @@
                 <div class="col-md-6 col-12">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <img class="float-end p-4" src="res/3d/icons8-bike-94.png" alt="">
-                            <p class="lead fs-5"><strong>TVS Raider 125: The Perfect Choice
-                                </strong></p>
+                            <img class="float-end p-3" src="res/3d/icons8-bike-94.png" alt="">
+                            <h3 class="lead fs-5 mt-3"><strong>TVS Raider 125: The Perfect Choice</strong></h3>
                             <hr class="w-50 my-4">
                             <p class="lead fs-6">The TVS Raider and Raider 125 have established themselves as formidable
                                 contenders in the motorcycle market. Whether you prioritize power, style, or
@@ -406,8 +407,9 @@
                                 <li>Rear suspension: Mono shock absorbers</li>
                                 <li>Front brake: Disc </li>
                                 <li>Rear brake: Drum</li>
+                                <li>Wheelbase: 1377 mm</li>
                                 <li>Front tyre: 80/100 - 17 </li>
-                                <li>Front tyre: 100/90 - 17 </li>
+                                <li>Rear tyre: 100/90 - 17 </li>
                             </ul>
                         </div>
                     </div>
@@ -418,7 +420,6 @@
                             <ul class="lead fs-6">
                                 <li>Clutch: Wet multiplate</li>
                                 <li>Analogue speedometer with integrated multi-function LCD screen</li>
-                                <li>Wheelbase: 1377 mm</li>
                                 <li>Ground clearance: 180 mm</li>
                                 <li>Seat height: 780 mm</li>
                                 <li>Kerb weight: 123 kg</li>
@@ -493,7 +494,7 @@
                     <div class="card border-0 mb-4">
                         <div class="card-body">
                             <img class="float-end" width="100" src="res/Motocross-rafiki.png" alt="">
-                            <h2 class="lead fs-2">TVS Raider 125 Engine Specification</h2>
+                            <h2 class="lead fs-2 mb-4">TVS Raider 125 Engine Specification</h2>
                             <p class="lead fs-6">The heart of any motorcycle is its engine, and the TVS Raider 125
                                 boasts a powerful and efficient one. Let's dive into the specifications:
                             </p>
@@ -510,7 +511,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Engine Type </h5>
+                                    <h3 class="lead fs-5"><strong>Engine Type</strong></h3>
                                     <p class="card-text fs-6">The TVS Raider 125 is powered by a 124.8cc,
                                         single-cylinder, air-cooled engine, known for reliability & low maintenance.</p>
                                 </div>
@@ -520,11 +521,12 @@
                     <div class="card lead mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="res/3d/icons8-tesla-supercharger-pin-94.png" class="img-fluid d-block mx-auto mt-4" alt="...">
+                                <img src="res/3d/icons8-tesla-supercharger-pin-94.png"
+                                    class="img-fluid d-block mx-auto mt-4" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Max Power </h5>
+                                    <h3 class="lead fs-5"><strong>Max Power</strong></h3>
                                     <p class="card-text fs-6">Output of 11.2 bhp at 7,500 rpm, the Raider 125 ensures
                                         that you have ample power at your disposal for a thrilling ride.</p>
                                 </div>
@@ -538,7 +540,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Max Torque </h5>
+                                    <h3 class="lead fs-5"><strong>Max Torque</strong></h3>
                                     <p class="card-text fs-6">The bike produces a peak torque of 11 Nm at 6,000 rpm,
                                         providing strong low-end and mid-range performance.</p>
                                 </div>
@@ -552,9 +554,38 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Transmission </h5>
+                                    <h3 class="lead fs-5"><strong>Transmission</strong></h3>
                                     <p class="card-text fs-6">It comes with a 5-speed gearbox, allowing for smooth and
                                         precise gear shifts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card lead mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="res/3d/icons8-gear-94.png" class="img-fluid d-block mx-auto mt-2" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="lead fs-5"><strong>Clutch & Suspensions</strong></h3>
+                                    <p class="card-text fs-6">Clutch: Wet multiplate Telescopic fork for Front
+                                        suspension and Mono shock
+                                        absorbers for Rear suspension</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card lead mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="res/3d/icons8-tyre-94.png" class="img-fluid d-block mx-auto mt-2" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="lead fs-5"><strong>Features</strong></h3>
+                                    <p class="card-text fs-6">Analogue speedometer with integrated multi-function LCD
+                                        screen. </p>
                                 </div>
                             </div>
                         </div>
@@ -564,11 +595,12 @@
                     <div class="card lead mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="res/3d/icons8-gas-station-94.png" class="img-fluid d-block mx-auto mt-4" alt="...">
+                                <img src="res/3d/icons8-gas-station-94.png" class="img-fluid d-block mx-auto mt-4"
+                                    alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Fuel System </h5>
+                                    <h3 class="lead fs-5"><strong>Fuel System</strong></h3>
                                     <p class="card-text fs-6">The Raider 125 features electronic fuel injection (EFI),
                                         ensuring precise fuel delivery for optimal performance and fuel efficiency.</p>
                                 </div>
@@ -582,7 +614,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Start System </h5>
+                                    <h3 class="lead fs-5"><strong>Start System</strong></h3>
                                     <p class="card-text fs-6">The Raider 125 is equipped with both an electric start and
                                         a kick start option, offering convenience and reliability.</p>
                                 </div>
@@ -596,7 +628,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Fuel Efficiency Delight </h5>
+                                    <h3 class="lead fs-5"><strong>Fuel Efficiency Delight</strong></h3>
                                     <p class="card-text fs-6">Triumph offers a strap mounted tank bag it has a capacity
                                         of 8 liters and also have space to hold the phone.</p>
                                 </div>
@@ -606,13 +638,42 @@
                     <div class="card lead mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="res/3d/icons8-accessories-96.png" class="img-fluid d-block mx-auto mt-2" alt="...">
+                                <img src="res/3d/icons8-accessories-96.png" class="img-fluid d-block mx-auto mt-2"
+                                    alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Bar end mirrors </h5>
+                                    <h3 class="lead fs-5"><strong>Bar & mirrors</strong></h3>
                                     <p class="card-text fs-6">A pair of bar end mirrors can be attach at the end of the
                                         handel bar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card lead mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="res/3d/icons8-bike-94.png" class="img-fluid d-block mx-auto mt-2" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="lead fs-5"><strong>Dimensions</strong></h3>
+                                    <p class="card-text fs-6">180mm Ground clearance for 123 kg Kerb weight. 780mm Seat
+                                        height with a Fuel tank having 10 litres of capacity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card lead mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="res/3d/icons8-tyre-94.png" class="img-fluid d-block mx-auto mt-2" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="lead fs-5"><strong>Wheels</strong></h3>
+                                    <p class="card-text fs-6">A 1377mm wheelbase with 80/100 - 17 Front tyre and Rear
+                                        tyre of 100/90 - 17.</p>
                                 </div>
                             </div>
                         </div>
@@ -678,29 +739,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="text-center lead fs-1 mt-5">TVS Raider 125</p>
+                    <h2 class="text-center lead fs-2 mt-3">TVS Raider 125</h2>
                 </div>
             </div>
         </div>
         <div class="container my-5">
             <div class="row">
                 <div class="col-md-6 col-12">
-                    <div class="card mb-4">
+                    <div class="card mb-3">
                         <div class="card-body">
-                            <h3 class="lead fs-5"><strong>The Heart of the Beast: Engine and Performance
-                                </strong></h3>
-                            <hr class="w-25 my-4">
-                            <p class="lead fs-6">Under the Raider's sleek exterior lies a powerful heart and 125cc
-                                engine that roars with vitality. This robust powerplant ensures a thrilling riding
-                                experience, whether you're navigating city streets or conquering highways. The Raider's
-                                exceptional torque and acceleration are a rider's dream come true.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <p class="lead fs-5"><strong>A Symphony of Features</strong></p>
+                            <h3 class="lead fs-5 pt-3"><strong>A Symphony of Features</strong></h3>
                             <hr class="w-25 my-4">
                             <p class="lead fs-6">The TVS Raider doesn't just excel in power; it's also loaded with
                                 advanced features. From LED lighting to a digital instrument cluster, it's a modern
@@ -708,11 +756,9 @@
                                 seating provides long-lasting riding comfort.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-12">
-                    <div class="card mb-4">
+                    <div class="card mb-3">
                         <div class="card-body">
-                            <h3 class="lead fs-5"><strong>Unveiling the TVS Raider Experience</strong></h3>
+                            <h3 class="lead fs-5 pt-3"><strong>Unveiling the TVS Raider Experience</strong></h3>
                             <hr class="w-25 my-4">
                             <p class="lead fs-6">Owning a TVS Raider or Raider 125 isn't just about transportation; it's
                                 about a lifestyle. These bikes bring a sense of adventure and freedom to every ride.</p>
@@ -728,9 +774,20 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-12">
-                    <div class="card mb-4">
+                    <div class="card mb-3">
                         <div class="card-body">
-                            <h3 class="lead fs-5"><strong>TVS Raider 125: Unleash the Power</strong></h3>
+                            <h3 class="lead fs-5 pt-3"><strong>The Heart of the Beast: Engine and Performance
+                                </strong></h3>
+                            <hr class="w-25 my-4">
+                            <p class="lead fs-6">Under the Raider's sleek exterior lies a powerful heart and 125cc
+                                engine that roars with vitality. This robust powerplant ensures a thrilling riding
+                                experience, whether you're navigating city streets or conquering highways. The Raider's
+                                exceptional torque and acceleration are a rider's dream come true.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="lead fs-5 pt-3"><strong>TVS Raider 125: Unleash the Power</strong></h3>
                             <hr class="w-25 my-4">
                             <p class="lead fs-6">For those who crave even more power, TVS presents the Raider 125 and
                                 beast with an insatiable appetite for the open road.</p>
@@ -752,27 +809,89 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="h3 mb-4">FAQs</h2>
-
-                    <p>1. Is the TVS Raider suitable for beginners?</p>
-                    <p class="lead fs-6">The TVS Raider is beginner-friendly, thanks to its easy handling and
-                        comfortable ergonomics.</p>
-
-                    <p>2. What sets the Raider 125 apart from the standard Raider?</p>
-                    <p class="lead fs-6">The Raider 125 offers higher performance with its 125cc engine, making it ideal
-                        for riders who crave more power.</p>
-
-                    <p>3. Are these bikes suitable for long-distance rides?</p>
-                    <p class="lead fs-6">Yes, both the TVS Raider and Raider 125 are designed for long-distance
-                        cruising, with excellent fuel efficiency and comfort.</p>
-
-                    <p>4. Do these bikes come with a warranty?</p>
-                    <p class="lead fs-6">Yes, TVS offers a standard warranty on the Raider series, providing peace of
-                        mind to riders.</p>
-
-                    <p>5. Can I customize the appearance of my TVS Raider?</p>
-                    <p class="lead fs-6">TVS offers a range of accessories and customization options to personalize your
-                        ride.</p>
+                    <h2 class="lead fs-2 mt-3">FAQ's </h2>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button shadow-none lead bg-white fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Is the TVS Raider suitable for beginners?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body lead bg-light fs-6">
+                                    The TVS Raider is beginner-friendly, thanks to its easy handling and comfortable
+                                    ergonomics.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button shadow-none lead bg-white collapsed fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    What sets the Raider 125 apart from the standard Raider?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body lead bg-light fs-6">
+                                    The Raider 125 offers higher performance with its 125cc engine, making it ideal for
+                                    riders who crave more power.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button shadow-none lead bg-white collapsed fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Are these bikes suitable for long-distance rides?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body lead bg-light fs-6">
+                                    Yes, both the TVS Raider and Raider 125 are designed for long-distance cruising,
+                                    with excellent fuel efficiency and comfort.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button shadow-none lead bg-white collapsed fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    Do these bikes come with a warranty?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body lead bg-light fs-6">
+                                    Yes, TVS offers a standard warranty on the Raider series, providing peace of mind to
+                                    riders.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button shadow-none lead bg-white collapsed fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    Can I customize the appearance of my TVS Raider?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body lead bg-light fs-6">
+                                    TVS offers a range of accessories and customization options to personalize your
+                                    ride.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
