@@ -1,51 +1,91 @@
 
-![Logo](https://nivesguru.in/android-icon-192x192.png)
+![Logo](https://wheelguru.in/favicon-48x48.webp)
 
 
-# Investment Calculator - Plan Financial Future | Nivesguru
-## 🌏 *Live Site* - [https://nivesguru.in](https://nivesguru.in/)
+# Discover the Ride of Your Life at Wheelguru
+## 🌏 *Live Site* - [https://wheelguru.in/](https://wheelguru.in/)
 
-Nivesguru is a online calculation tool for investments absolutely free of cost. A initiative for Indian to motivate on investments for their finance related queries with real time output along with a tool set of calculators. You can calculate your investment and its maturity amount through our calculators like Savings / Fixed / Recurring Deposits. 
+Discover the best two-wheeler Bike / EV with excellent mileage, on road prices, detailed specification and info. Compare new bikes, scooters now by Wheelguru.
 
 
-## Calculators 
-### Government Investment plans 
+## Bikes
+### Tvs Bike
 
-- [SCSS Calculator](https://nivesguru.in/senior-citizens-savings-scheme-scss-calculator)
-- [MIS Calculator](https://nivesguru.in/post-office-monthly-income-scheme-mis-calculator)
-- [MSSC Calculator](https://nivesguru.in/mahila-samman-savings-certificate-mssc-calculator)
-- [TD Calculator](https://nivesguru.in/post-office-time-deposit-td-calculator)
+- [TVS Bikes](https://wheelguru.in/tvs-bikes)
+- [TVS Raider 125](https://wheelguru.in/tvs-raider-125)
 
-### Government bonds 
+### Bajaj Bike 
 
-- [Kisan Vikas Patra / KVP Calculator](https://nivesguru.in/kvp-calculator)
-- [Sovereign Gold Bond / SGB Calculator](https://nivesguru.in/sgb-calculator)
-- [National Security Certificates / NSC](https://nivesguru.in/national-savings-certificate-nsc-calculator)  
+- [Bajaj Bike](https://wheelguru.in/bajaj-auto)
+- [Bajaj Dominar 400](https://wheelguru.in/bajaj-dominar-400)
+- [Bajaj NS 400Z](https://wheelguru.in/bajaj-ns-400z)  
+- [Triumph Speed 400](https://wheelguru.in/triumph-speed-400)  
+
   
-### Family & Pension plan 
+### Hero Bike
 
-- [APY Calculator](https://nivesguru.in/apy-calculator)
-- [SSY Calculator](https://nivesguru.in/sukanya-samriddhi-yojana-ssy)
-- [Public Provident Fund / PPF Calculator](https://nivesguru.in/ppf-calculator)
-- [NPS Calculator](https://nivesguru.in/national-pension-system-nps-calculator)
-- [PMJJBY Calculator](https://nivesguru.in/pradhan-mantri-jeevan-jyoti-bima-yojana-pmjjby)
-- [PMSBY Calculator](https://nivesguru.in/pradhan-mantri-suraksha-bima-yojana-pmsby-calculator)
+- [Hero Bike](https://wheelguru.in/hero-bikes)
+- [Harley Davidson x440](https://wheelguru.in/harley-davidson-x440)
+- [Hero Splendor Plus](https://wheelguru.in/hero-splendor-plus)
+- [Hero Xtreme 125R](https://wheelguru.in/hero-xtreme-125r)
+
+ 
+### Ktm Bike
+
+- [Ktm Bike](https://wheelguru.in/ktm-bikes)
+- [Ktm Duke 390](https://wheelguru.in/ktm-duke-390)
+- [Ktm Duke 200](https://wheelguru.in/ktm-duke-200)
   
-### Financial Calculators 
+  
+### Royal Enfield
 
-- [Income Tax Calculator](https://nivesguru.in/income-tax-calculator)
-- [GST Calculator](https://nivesguru.in/gst-calculator)
-- [Simple Interest Calculator](https://nivesguru.in/simple-interest-calculator)
-- [Service Tax Calculator](https://nivesguru.in/service-tax-calculator)
-- [Capital Gain Tax Calculator](https://nivesguru.in/capital-gain-tax-calculator)
-- [TDS Calculator](https://nivesguru.in/tds-calculator)
-- [VAT Calculator](https://nivesguru.in/vat-calculator)
-- [SIP Calculator](https://nivesguru.in/systematic-investment-plan-sip-return-calculator)
-- [Inflation Calculator](https://nivesguru.in/inflation-calculator-india)
-- [EMI Calculator](https://nivesguru.in/emi-calculator-online)
-- [SWP Calculator](https://nivesguru.in/swp-calculator-online)
-- [Compound Interest Calculator](https://nivesguru.in/compound-interest-calculator)
-- [Lumpsum Calculator](https://nivesguru.in/lumpsum-calculator-online)
+- [Royal Enfield](https://wheelguru.in/royal-enfield)
+- [Royal Enfield Classic 350](https://wheelguru.in/royal-enfield-classic-350)
+- [Royal Enfield Hunter 350](https://wheelguru.in/royal-enfield-hunter-350)
+  
+
+### Yamaha bike
+
+- [Yamaha bike](https://wheelguru.in/yamaha-bikes)
+- [Yamaha MT-15](https://wheelguru.in/yamaha-mt-15)
+- [Yamaha R15](https://wheelguru.in/yamaha-r-15)
+
+
+### Jawa Bike
+
+- [Jawa Bike](https://wheelguru.in/jawa-bikes)
+- [Jawa Perak](https://wheelguru.in/jawa-perak)
+
+
+### Ather Scooter
+
+- [Ather Scooter](https://wheelguru.in/ather-scooter)
+- [Ather 450 X](https://wheelguru.in/ather-450x)
+- [Ather Rizta Z](https://wheelguru.in/ather-rizta)
+
+
+### Suzuki Bike
+
+- [Suzuki Bike](https://wheelguru.in/suzuki-bikes)
+- [Suzuki Gixxer SF 150](https://wheelguru.in/suzuki-gixxer-sf-150)
+
+
+### Ola Scooter
+
+- [Ola Scooter](https://wheelguru.in/ola-scooter)
+- [Ola S1 Pro](https://wheelguru.in/ola-s1-pro)
+
+
+### Honda Bike
+
+- [Honda Bike](https://wheelguru.in/honda-bikes)
+- [Honda SP 125](https://wheelguru.in/honda-sp-125)
+
+
+### Yezdi Bike
+
+- [Yezdi Bike](https://wheelguru.in/yezdi-bikes)
+
 
 ## Tech Stack 
 
@@ -71,7 +111,6 @@ Nivesguru is a online calculation tool for investments absolutely free of cost. 
 > Contributions from 
 - [@anupammo](https://www.github.com/anupammo)
 - [@bhritick](https://www.github.com/bhritick)
-- [@dmrinalwd](https://www.github.com/dmrinalwd)
 
 ## License 
 
@@ -79,7 +118,7 @@ Nivesguru is a online calculation tool for investments absolutely free of cost. 
 
 ## Screenshots
 
-<img src="https://nivesguru.in/nivesguru-1.png" alt="Nivesguru Screenshot 1" width="320">
-<img src="https://nivesguru.in/res/meta/national-savings-certificate-calculator.png" alt="Nivesguru Screenshot 2" width="300">
-<img src="https://nivesguru.in/res/meta/apy-calculator-nivesguru.png" alt="Nivesguru Screenshot 3" width="320">
+<img src="https://wheelguru.in/res/meta-image/index-meta.png" alt="WheelGuru Screenshot 1" width="320">
+<img src="https://wheelguru.in/res/meta-image/tvs-bike.png" alt="WheelGuru Screenshot 2" width="300">
+<img src="https://wheelguru.in/res/meta-image/bajaj-bike.png" alt="WheelGuru Screenshot 2" width="320">
 
